@@ -1,4 +1,4 @@
 # budgeting.github.io
-Budget Tracking Site
+Budget Tracking Site for CS4474B Final Project
 
-To view the site: https://budgeting.github.io
+To view the site: http://budgeting.github.io
