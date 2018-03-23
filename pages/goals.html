@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>BudgetTracker</title>
+      <!-- Bootstrap Core CSS -->
+      <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- MetisMenu CSS -->
+      <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+      <!-- Morris Charts CSS -->
+      <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+      <!-- Custom Fonts -->
+      <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body>
+      <div id="wrapper">
+         <!-- Navigation -->
+         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="index.html">BudgetTracker</a>
+            </div>
+            <!-- /.navbar-header -->
+            <ul class="nav navbar-top-links">
+              <li class="dropdown">
+                <a href="bugdet.html">
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIeSURBVGhD7Zm9Sl1BFIVvYSVWFhYWKUQIeQEhP5W1JH1IF0htGcgDpDTYBWyt1QewSpVnCCkkWqRIFUiKgMn69CwYNnMg4MxcHGbBh3MXe/bMuhzvOcNZDA0NDeX0SLwSbyrDGqxVRR/EtbgUXyvDGqzFmkX1QvwSj28+tdETwZp7N58K6VCc3A6b6lSwdjEdT1jvxcdK0NuK695ZseGFOBe5jdwFetLbahLk5e2wqOg5gvyPug7Sxf9IN79arTSCzCltuD39XZ9AtbxqQVbFt+nvu4maXrUgrTWCzKnbIJ9EPAxtioPgwfOJ6FPLnOjT26oehLvvkeBY+lb8FQ8ENZ+Fj6w/BI8dwNg+NdQyh7n0wKdn80cUP2t5Mw6Sq5t7hkrnorm6YooNWWxfbIlnIg1yJvDhSjgIY/vUUOsg9MCnZ/MgbCDFQaLvINGn1kFSmgZhA/52zYrYCB6sTUSfWuZEn95W9SC5p18eL14HD3Ymok8tc6K/tDM7PpeEL60vwpv6KXxpMbZPDbW+tBjjL/XM7s04SK4OchtM56K5umKKDbsK8l1wJ2acBuES8l36j3AQxvapodZB6IFPz6ZB2Jjv0oZfpt3gAWcLiD61zIk+va0RZE6xYTeXFov5m/NmHCRXB7kNpnPRXF0xxYZdBenihnhvH1G6edHjV2+8Dmulp+K3KPrqDS3jZSjn+ip6KFq9nmatoaGhoVSLxT/XpNQM2j2joAAAAABJRU5ErkJggg==">
+                   <div>Budget</div>
+                </a>
+              </li>
+              <li class="dropdown">
+                 <a href="savings.html">
+                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALHSURBVGhD7Zi5jtUwFIaDoIKGVQIatgbBK9ABBWIHwTwDYmkQEkj0FGwvwPIGbAWLhGh4A5AYDTVUQ8cMAlHA/zk53Mgkk+s4o1jgT/pE7NzL9cnxiT0uMplMJpPJ/OOskw/lF/krMRkTY2OMnbyS7+QZeSAxz0rG9lIuyXZJ5LtdK032SMa4zbVa2Cf5EKyWb6t/z1em0AeMkbG2Ug8ESCfsrISx+6B3ICnQOxA/nUOysXJaoqeWzwo5I8/JNXQEcFw+k98kv4GL8ok8KkMICqQpI9fkgvwkO1+BFTz51/K7vCePSQr4giQ4+rjHa78tS9EZ8WvkjbwpD8qfdHSwSX6Us3IHHS1wj8/MSb7TxKDFzlO5If3PtUEmPsgrrlWyVZ6q5NrgMwTz3LX+ZtBiDwmEKcSUsUyslHclmaQ2kOvbknvAq5bvHHGtCdFTyyckkKeS+W/ckfPypGTgyDX7p1vSeCAfl5etBAUSmxHeTmQFmEI8fQbuc1pyb4trFcUJSbbqRGekb41QsNy/5FplPTA4m0J1VknuWZB8h+9ucK0JoxS7BXLRtUYOZIipxToB00ytza5VTq2v5eUfoqeWT0ggrNgUrkFBU9gEQxaQTNHH2mQkV+xsO/zXL69anj5TCbkmQJtyu+QPeci1JkRnpG+NGGw7WOTqCyJvJ7KCNp1g2RZE8APps0Vh29G1RWEhtC2KX+TGoMV+VbJp/Cxf0DEFDIzMMGXuS4qZNxMbR7JCTXCPTeh62UT01PJhG8+hRJ9t/GFJEfMg+A3k+pH0a6KLoECaMjIUZKltCjURnRG/RsZkkGJvOgQYqw+CAqmns+lYZqw+6AzEDug4BEuVvZIxLnlAB3ZkyvEk6UxJxvReTnVewAExfxDxRxCRpyRjYmxrZRCXpf+fXZfLzeC/y6K3X1pquQ5dCPsw1u9mMplM5r+kKH4D1rhpgsIBV3wAAAAASUVORK5CYII=">
+                 <div>Savings</div>
+                  </a>
+              </li>
+              <li class="dropdown">
+                <a href="goals.html">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQkSURBVGhD7ZlXq9RAHEcjFkRFH6zYG9gboqifQcGCiE/28iXE7oO9oOKzilgQKygW7Ao+CKLYO2L9ABYsv5PJyGzcku7d6z1w2Ek2ycxspv7Xa+I/ZFxg3bM3sO7ZH1j31GVFmsnRconcJg/Kd4GkObdYcg3XNjhGyh3yo/wpn8pjcqe8H0j6uHwmf0kqxz0j5D+HQpyQP+RluUB2ky7lmhbXcC33UHEqOEwWTku5Tn6XVGSMdKGgA02ypCKcC1d0rDwtv8rVsoUsBApyU36SUzgR0ElON0lvjlxhkiUV4RzfAddyj2Wq/CyvyK6cyJN+kvZ/L0gDbweGyA0mWYJbEReuHWySXuvgc4CkPz2WfTmRB13kE3letudEwANZrcPuDqzEKPnIJH06yHOSvDpzIkv41a/Lu5KMGDp7S+C4Gvza9hevhH0Gz+TZbeQteVVm2mfWSoZWXj30kTSxrOGZPBt6yA9ylX+UATSbb9Lt2EUxSzKa2b6UipOSIRZoYnREt49kDc+mw5MXzYwR8qhMBR2Ryc6dJ5jF88bNY5Jk0kw1YbKEYFwH5o8ilxPkZecTOv0Wk4wPr5XONs8/8rzJcr1JFgJ5kSew0HwrEy00aU680u7+UXQYeeabZFlYYzFHxKGnZKGZqFnzK9gMaVZzTbImFJR+xWeYat+Vg9Zg12bPZdT7SmDvwFIc+suVJhmJcgWOWwkgT/IGRs5NJhmPQ3KXSSbCLXiSSoRhmUOZajJB7nF8Je+EziFvqtaSw2IrEKcSPHu7DOdLWSiTe44y/0VDqgh5hPONXJEwDbFpse+PzVbpdnZ2b1EpV/AklVkjU3d2hl8CBcAMa3d2tahW4LiVIU87u7+UcX6EPySdEN/Iahny3WuTjAz7FCbEREsklgPvpS0Uy4WNJlkI5JXJEgUYBlmwAYGCoheNNjjB7nSzSSaDh9GmCdlYhgefeeJuG8ZLmvhQ/ygFBM+IOwGbHYINeW+syKOVf+R5Z+Vhk0wHGxq2utP8o2KZKb/IQf5RBjCHEHyw0cO8gg+stm3woZckCLjcP8oIQjJ0evbS4XBQx+CzEiw5bBCvEpXCQZdkc5kpBMv4xS7ItpwIeCirjWZE4bES3MszLO3kRZlLgM5CGJMoCr8WcSewnZLRrNxWuFLIlGvtCGifwRu5LYk85hYytbBkICBBn5kt7STFmD/DJP2trg2suRWhr9kYANe6QWw6NkFs3kZubyIMfYaCEjwj7hReTrM9tYs9tyKcs1tXC//4npE8a5nMvE9EgQg8wTMmrGtykSRQ4OJWxMI1S+UNyb1HZGZDbBqYa1hC8HcaizsCBaek+9cbexvOvZBcw9qJe1LP2HlAfyE6uVASUDsg7Z+hpDnHd0UsczKnXNOqSxpNRfYF1j0TZaRoRxONB8/7Df9r+UXEeraeAAAAAElFTkSuQmCC">
+                  <div>Goals</div>
+                </a>
+              </li>
+              <li class="dropdown">
+                  <a href="debt.html">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJUSURBVGhD7dk9SFVhHMfxK1iLOgQSDhYRLaGDELSIi4nREEhDQxKoW0uEEAaBbxHpYolEQ4KIRFEYgUOppEEaJCJCS0uigouiiEMk9OL317kXHi7X8Dnn8Jy8PD/44PHA5Xn+9zz/e95SPj4+Pj4WKcIJVKEWV3EDd9GHh7gIZzmKMlSgBg1owW304Cle4wO+YA0/8MfwC+v4ilmM4Q120YRI0cSu4xa68RjPMYEFLGMH5oRkG98wh7d4hgF04iYacQnncQbHsF/a8TnYDBcN9hurWMQUXuEJ7qMV+qYuoxpncRyFiDPXsBJshss7DAabiSZyIR/xHe8xmSD11BZOI1RUiI6KlpEaNim9UPNvQP1kHRXyINhMPAWYgX5srGMWUp+mRtYR0l+X+5QOTAebdvnfCrkDzck6ZiFH0lzHHDeWQu6luY45rj8i+lB2j7hO7D2SN4XkzdLyzR4iOotXog661Bdt6wI2ciGuekQF6JYh+/4m4yfOwSquC9HNle4cX+CUduSILud1WW8VsxAXS0s9oLtKjaO70RGUwEzkQlw0+xBGUYrMUroCM4fiiDRjCXqQ0YVhxH5EXPRIMbS0XmK/u8FDUYiiBxjzMH+pTJF/tVwsrUx0HtERuYDYzyMumj1XzHH9tZY+5LpHsmOO6wsxC8mbpeWbPWJiPyKZtXrQ51Bx71NCF6LXCHr2qvxrEBf7FD1p1Jys0w89b9WZNuloDp/w6O9/ljmJTehJuN4atSVEY6sIzaUcoaIXlfoWxpHr3YULGltz0Fx8fHx88iKp1B6SPx5YYFRT6wAAAABJRU5ErkJggg==">
+                    <div>Debt</div>
+                  </a>
+              </li>
+            </ul>
+            <!-- /.navbar-top-links -->
+            </nav>
+         <div id="page-wrapper">
+            <div class="row">
+               <div class="col-lg-12">
+                  <h1 class="page-header">Goals</h1>
+               </div>
+               <!-- /.col-lg-12 -->
+            </div>
+            <div class="row">
+              <label> How much would you like to save? </label>
+              <input> </input>
+            </div>
+            <div class="row">
+              <small> By what date? </small> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD2SURBVDhPndKxagJBFIXh1aRUAmKRQowaCxGLKBIsBEFQbAwBDYiVZao8hKS39mW0Fm2iYGUKCysRBF/A/yjCjszCsgc+WGa5M3d3ruPKA6LXR2sieLw+mgmjgTkyHiboQIcYmWKDExYejvjHDDrsErW6QxojLXjkFwWskdCC8oQ9vnzaIolLVKx2xz4dYBRrt1te0UYRNTSRRxdqdwnP4hx6qKCFT7xhgBSsxc/4RqDiGD6gF3Wo1XdUkYU20gHWYi0MUcIP9K193Mcovt2zxq+MOHSf+jk68T7GPSsavRVsk+X2B2PClBDUim2m3V5gFAaM45wBVr0+eE9YRioAAAAASUVORK5CYII=">
+            </div>
+            <div class="row">
+              <label> You need to deposit ____ monthly to make your goal </label>
+            </div>
+         </div>
+         <!-- /#page-wrapper -->
+      </div>
+      <!-- /#wrapper -->
+	  </div>
+      <!-- jQuery -->
+      <script src="../vendor/jquery/jquery.min.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+      <!-- Metis Menu Plugin JavaScript -->
+      <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+      <!-- Morris Charts JavaScript -->
+      <script src="../vendor/raphael/raphael.min.js"></script>
+      <script src="../vendor/morrisjs/morris.min.js"></script>
+      <script src="../data/morris-data.js"></script>
+      <!-- Custom Theme JavaScript -->
+      <script src="../dist/js/sb-admin-2.js"></script>
+
+   </body>
+</html>
