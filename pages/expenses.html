@@ -29,6 +29,17 @@
     text-align: center;
 }
 
+.table{
+    display:table;
+    height:100%;
+    width:100%;
+}
+.table-cell{
+    display:table-cell;
+    vertical-align:middle;
+ 
+}
+
     </style>
       <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <!-- MetisMenu CSS -->
@@ -95,22 +106,26 @@
                             
                   <div class="square">
                     <div class="sqcontent">
-                      <p>Groceries</p>
+                      <div class="table">
+                        <div class="table-cell">
+                             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANRSURBVGhD7dlpqI15AMfxw4gZSyONIS+UpTSSaEQ0jbUUEkPMkPKCFxjhpRjLpBiFGNmVUpY0WWJkTFmGGVKUIbwgWZI09n3/fp/nPpx7unfy4v+cc5+cX33y/zv3dO9z/vv/5Mopp5yPN71wBq/xGGcxHy2QmTTCbSzHMFzFKVzAPXyPTKQL3qBBVMvlFmEnamEWXmAEanzyW2Q4rmM6kszBHXwR1Wp4kjFyF6tRD0nq4CJmRLWM5xf8HReznYFwNvskqmU4LeGE0C6qZTyOH6fkP7EJy/ATJuA7fIv2+BK1UWPzFw5iHtZge8X/ncMt2GKJV7gJF9ZD+A0rMBeT8QP6oiNcdOuiaPEP2RYXq4yzW3N0gLOga88kzMav2IoD+Bc34PqU//BO8bb4UbiOrYe7i2kYg/oIErvQ+bgYLE3guPsGQzAeTvNLsBF7cRnuMIJNNP6yl/gsqhUvS+EDBcvnsAt8HdUqpxs2xMUodikl8TV/xthFHFtJVyl8b2FOIn+nESRXMDYuVorbnK5xMUrrCkl8zZ9J0q/iX1P43vz44dkL7A1BYxO7qSxMWg8yAE+Qv2UKkoX4Iy5WSlpdy1nrcFwMG6dBp85i5Qhct4KnExzwTaPa+6TRIp/iKfpHtcCxr7qQ9Ylq75PGGOkJB3r++4LGbceUuPguaTzITJyIi+lkC9bFxXdJo2vtw+K4mE7cQhyPi6nFfdsDuG1JLYPxEPlb9dAtYlfzairVe4JWcOZqG9XihB4j7pZTP1p7TXQfQ6Na2NjKE/EcHq9Tj5+WW/r9AXlWcbF1bFS1n0slXhldwoKAfsYoNEPR8iNCH7JKkmTVLfYhK3g8olZ3yMpcrqFogzLN7MKquJjtjITrSeeolvGsxTP8DqfkkDwdFjW94U7VwX8Mu+GZxfuoqv7AhEdm33MaO+Al+X9IXi/6g5h/sBJuMTzZubB5adAY1cWbR1vS9ziNd4cbxa9QsrgbHoRx8IawIfy0/VqvuvjFkvfAnjbdDRtbxO8xSxZbxIvtpEVGw/N2/o63MJthi3gVaot4d2WLlPSrix54BMfIHjhGpuL/4jHAW3xbxktru6J3viVPG3jz7t2X35V8SNwgeh3qA9g1yymnnGDJ5d4CtjTpVNwJmx4AAAAASUVORK5CYII="/>Groceries
+                        </div>
+                    </div>
                     </div>
                   </div>
                   <div class="square">
                     <div class="sqcontent">
-                      <p>Health &amp; Hygiene</p>
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALXSURBVGhD7ZnJihQxHIdbL+OCZ5ebCyhzFNG7guJyU2F0jj7AjIqoKCKKV8H96gPoU4h6ckT0PRzGDUYFf1+lAiGUQ3X6n3TE+uCDVLpnun+dpZLKaGBgoGo2yJPyunzYSpk6Xque7fKZ/Cq/yTfyZStl6njtieS9VTIv+ZJL8rTcJGOo4zXe80Wek1VxW67KRbmeioADrSG856Lkb25QUQP3JF3meHPl2Cs/uuJorhWo2+WKDafkTzn1lvEhjjZX7kseluvkHioiqOO1kAVJN9vaXE2BOAQQ4oor9oZu9l4+ba4KE4cgwCVXTOKMpFVmmqtCEOK7DFtitzziikkwm/E/uc8UIQ5xSD53xYl5K6+5Yl66WmKLPOiKE/NCsgLIShxip/zkimZkDxKHoD8zhTIuLMnatQjxQx5rrlwIZpeu5cckbJbZBrsP8VteoKLFOgSclVmmX9+daAlCxGEs4Yb4QZrfEMMQnpxhLssVabpEiUOE3ShHmBOSRaNfVJrQFSIe2JZhmAX5PLYAZsQhmFqZYrsGtkUYH4LPNaNrTHCz46b3NyYJUyQEyw2WHX1ICVOsJVgAshDsyzhhsoS4I8MQLMFTlxx9wmQJwSbmlwxbgk0Rm6NU1gqTJcQOuSz9dtTvsS3oCsOPZR4CHkj2x/4BQMoeey3CMNlCbJTss+lasE/GTzQs8GFYcJqHAJbI/EIEgneS50/W0BLZQsAt+coVs5FlYMc8kmwnYb/kWa0lRUIA++FcQYqFAM4nXruiKUVDQDzY2ZXNumIyxUMAJ0XsL/z065fqqRCC6bxoCA+nSdwQ4zOMcZlqCNgmaRUe5acy9RCe85J9Mocs48LNrooQHo67OPbi+KtPN+M9VyU/wF0qaoLjLroZB5M8IOvan1PH5MAM91lykFklHBE/lgRiGo2Pk1kzcVJ7XzK+qoepmcNMuo8/4L8pGdj/xAH/wMD/yWj0B35avLFCom3FAAAAAElFTkSuQmCC">Health &amp; Hygiene
                     </div>
                   </div>
                   <div class="square">
                     <div class="sqcontent">
-                    <p>Home</p>
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJrSURBVGhD7Zg9b9RAEIYPSqBGCjR8NVShTUsNLQWipoKaPwF9fgCIAoQUKV3+ATUlSFBBi2gQiI/3yd1Go9HeeOzcWbayr/RIvt3Z9bzrnU3sRVPTfHV1xWx1XjwV31dwTdusdEe8F8VAMUQbfZPXJfFC/BZvhd1SXNNGHzHETlL3xecVXK9TNm50RStd+vzTiZ7c6LLF7Pe+77P1Ygve19Loh0GUQK3PG4tM276tKdoS9D0X0XYpW40YYmvbsLZFN6qoSO+J0sd1l+xcPn5rh0G0UlfEuhXuErH26TJXke+rPd20uvb1E7GJfW1rijmZu8j2+VpMKZpgV6y78V3xOAmxRcxhF417FPm+9KIxqPZILwpbzHYrFL0SP8QnA79rbcR6+cOAexbZPnLsFDd4t7w8UbaYGesTzLZZRYcBuUVjT2Rvwqq/EbUVqqmWYLbNyxY8OZQdkBl7LIJeC1vMds9Gqt0k27ZO/jAgt9RYgv6In8IXc5dqCWbbIpWCJydyS40l6KP4cvyrnxh7IG4Y+F1r62OkiJzILTX2mngohhr5l2SoEXIjx5SGGrks7MpHENtXxUhaQ41sW83I1DSaEf4iP0sy5F/00YxwEn0VRx0Qc5pTK63TGMkkmI3zakb6qhlJqhnpqzNhZEfsLS/nbeSl+CUuiFkbuS0eLC/HNfJN8I5+TtwUiPfmqO1QZBIkhljGMLa8jzNn1EZOvY38FY/EdfFBoH0RtfEqmjVCLGMYyxyIOaM2cuptZNNbyyob5zWJGrFqRkRvI3wYs585M9Q+j9bIxnnIqZeRW6L24XkKkFtTU9PZ1GLxH4PpV4jASh2AAAAAAElFTkSuQmCC">Home
                     </div>
                   </div>
                   <div class="square">
                     <div class="sqcontent">
-                    <p>Phone &amp; Internet</p>
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANUSURBVGhD7ZlbyE1pGIB/yZkkckpjblBORbhAQjlOkSlRc+OQRLlCuaQci4Qo7kSEC+4mJmdD4dbUOJ9rcizkMAzP8y0ra69/2bbR3v9atZ966nu/v3///7vXd3i/bzXUqVOnThbtcCrOwr52FJFf8RG+w6f4EfejyRWG3/A9nsE2dsBovIX2FSKZyfgvbsV1diTohdcw98m0xvu4LUQRQ9EnFFOIZObjE+wcooh0IhIncxpzmcwpdEhlMfuzMXEyx7GlHXmhN/6HI0LUmGGfTfITPseFIcoJS/HvqFkWF4DpUTOwHQ9EzXxwDLdEzbIMxG5RM+BQPBg1mx4n7BucEqLK+B2dMy4Oi+3IA7+gicSbXyUMx6v4J+ZmsvdHS5AhIfo2Dq0reAE72pEnTuDuqFkWk/gLc5mEjEVLkz4hyib3ScScxD1RsxGFSULG4Ad0zqRZg6+wU4gKwB94OGqW0B1f4rwQFQA3POeKS3KalfgA24aoAGxEC8L0vtIB7+H6EBUA/+GbuDlEpUxEn9jIEBWA8ejEHxeiUnbhdcz96hXjSfE2dgnRF5wjFzF3Z5Gv4dH3MloZN7cjgQcr58tebGbHd+DnLsFD6BFgEbbAqvIzPsb0RYQMQg9WJlPpk3E4nkU/0yOA+hmWSFU/Nsc3KwtCVIrJ+GQ8Jn9rszSJ82jV7KVfjKdT+2pyBzAXTWZaiErpiQ7BGzjKjgxMwvLGqtnjtOeZJA7VmiWzAt/ihBCV4h/fiSa7AdtjTJyEtVrydNkVk8fmmt7OrMbXOCNEjXEY3sWHaDnjcMtKQgbj1y4BTabqFcRy9Jv3HiwLn8YqfIHWZ1lJJMm6BHSf2heiKjMHTWYtppfmmB7oz8slIVmXgN41ez3VL0RVxnLFZdSKOb1p/h/Sl4AuyzOjZvVx6byEd9Cy5kdIXgI62X3ik0JUI9yp3diszSw0v+c2JgsXgHP4D1Z99crCJ2LV7KqTdZ6pFL8U388kl+aa4xFgEzosjuAArBTn2Q70d9OTv8nw3O8i4HCzFiv3DtKd3qfwDH0/416UO7zQ8HbGb9l7M5daNzpfsjqfLEtcZt0A3UBbYa7x3szzizeavmC1OjiKy9DXE4XDIefTKMwFRp06dZqMhoZP6DOqDttmTWIAAAAASUVORK5CYII=">Phone &amp; Internet
                     </div>
                   </div>
                   <div class="square">
