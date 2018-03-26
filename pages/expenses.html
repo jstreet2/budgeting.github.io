@@ -28,6 +28,8 @@
     text-align: center;
 }
 
+
+
     </style>
       <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <!-- MetisMenu CSS -->
@@ -166,6 +168,7 @@
          </div>
 
          <div class="col-md-4">
+          <div id="piechart" style="width: 400px; height: 500px;"></div>
          </div>
 
          <!-- /#page-wrapper -->
@@ -184,6 +187,32 @@
       <script src="../data/morris-data.js"></script>
       <!-- Custom Theme JavaScript -->
       <script src="../dist/js/sb-admin-2.js"></script>
+
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Expenses', 'Dollars per Month'],
+          ['Groceries',     11],
+          ['Social',      2],
+          ['Automobile',  2],
+          ['Entertainment', 2],
+          ['Clothes',    7]
+        ]);
+
+        var options = {
+          title: 'Expenses'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
 
    </body>
 </html>
