@@ -31,6 +31,7 @@
 	.label {
 		text-align: center
 	}
+
    </style>
    <body>
       <div id="wrapper">
@@ -68,15 +69,16 @@
             </nav>
          <div id="page-wrapper" style= "margin-left: 0px" > 
             <!-- <div class="row"> -->
-            <div class="col-lg-12">
-
+            <div class="col-lg-5">
               <h1> How much would you like to save?</h1>
-              <input id="savings_amt" type="range" min="1" max="100" step="1" style="width: 60%">20% Recommended</input>
-			  <br>
-			  <h1><span id="amt"></span> %</h1>
-
+			</div>
+			<div class="col-lg-6">
+				<h1><span id="amt"></span> %</h1>
+				<br>
+			    <input id="savings_amt" type="range" min="1" max="100" step="1" style="width: 60%">20% Recommended</input>
 			</div>
          </div>
+		 <h2 style="text-align: center">Monthly savings: $2234</h2>
          <!-- /#page-wrapper -->
       </div>
       <!-- /#wrapper -->
