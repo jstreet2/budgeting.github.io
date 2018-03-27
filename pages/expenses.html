@@ -28,9 +28,6 @@
     text-align: center;
 }
 
-<<<<<<< HEAD
-
-=======
 .table{
     display:table;
     height:100%;
@@ -45,7 +42,10 @@
 .nav, .navbar-top-links {
 		text-align: center
 	}
->>>>>>> fe9442cddc7e3e9c3fe117b27f2ec2f18c8108ab
+
+  .epbtn{
+    color: black;
+  }
 
     </style>
       <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -107,80 +107,102 @@
                </div>
                <!-- /.col-lg-12 -->
             </div>
-            <div class="col-md-8">
-                            
+            <div class="col-md-8">  
+            <a class="epbtn" href="#myModal" data-toggle="modal">     
                   <div class="square">
                     <div class="sqcontent">
                              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANRSURBVGhD7dlpqI15AMfxw4gZSyONIS+UpTSSaEQ0jbUUEkPMkPKCFxjhpRjLpBiFGNmVUpY0WWJkTFmGGVKUIbwgWZI09n3/fp/nPpx7unfy4v+cc5+cX33y/zv3dO9z/vv/5Mopp5yPN71wBq/xGGcxHy2QmTTCbSzHMFzFKVzAPXyPTKQL3qBBVMvlFmEnamEWXmAEanzyW2Q4rmM6kszBHXwR1Wp4kjFyF6tRD0nq4CJmRLWM5xf8HReznYFwNvskqmU4LeGE0C6qZTyOH6fkP7EJy/ATJuA7fIv2+BK1UWPzFw5iHtZge8X/ncMt2GKJV7gJF9ZD+A0rMBeT8QP6oiNcdOuiaPEP2RYXq4yzW3N0gLOga88kzMav2IoD+Bc34PqU//BO8bb4UbiOrYe7i2kYg/oIErvQ+bgYLE3guPsGQzAeTvNLsBF7cRnuMIJNNP6yl/gsqhUvS+EDBcvnsAt8HdUqpxs2xMUodikl8TV/xthFHFtJVyl8b2FOIn+nESRXMDYuVorbnK5xMUrrCkl8zZ9J0q/iX1P43vz44dkL7A1BYxO7qSxMWg8yAE+Qv2UKkoX4Iy5WSlpdy1nrcFwMG6dBp85i5Qhct4KnExzwTaPa+6TRIp/iKfpHtcCxr7qQ9Ylq75PGGOkJB3r++4LGbceUuPguaTzITJyIi+lkC9bFxXdJo2vtw+K4mE7cQhyPi6nFfdsDuG1JLYPxEPlb9dAtYlfzairVe4JWcOZqG9XihB4j7pZTP1p7TXQfQ6Na2NjKE/EcHq9Tj5+WW/r9AXlWcbF1bFS1n0slXhldwoKAfsYoNEPR8iNCH7JKkmTVLfYhK3g8olZ3yMpcrqFogzLN7MKquJjtjITrSeeolvGsxTP8DqfkkDwdFjW94U7VwX8Mu+GZxfuoqv7AhEdm33MaO+Al+X9IXi/6g5h/sBJuMTzZubB5adAY1cWbR1vS9ziNd4cbxa9QsrgbHoRx8IawIfy0/VqvuvjFkvfAnjbdDRtbxO8xSxZbxIvtpEVGw/N2/o63MJthi3gVaot4d2WLlPSrix54BMfIHjhGpuL/4jHAW3xbxktru6J3viVPG3jz7t2X35V8SNwgeh3qA9g1yymnnGDJ5d4CtjTpVNwJmx4AAAAASUVORK5CYII="/><p>Groceries</p>
                     </div>
                   </div>
-                  <div class="square">
+                  </a>
+                  <a class="epbtn" href="https://www.facebook.com/">
+                 <div class="square">
                     <div class="sqcontent">
                       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALXSURBVGhD7ZnJihQxHIdbL+OCZ5ebCyhzFNG7guJyU2F0jj7AjIqoKCKKV8H96gPoU4h6ckT0PRzGDUYFf1+lAiGUQ3X6n3TE+uCDVLpnun+dpZLKaGBgoGo2yJPyunzYSpk6Xque7fKZ/Cq/yTfyZStl6njtieS9VTIv+ZJL8rTcJGOo4zXe80Wek1VxW67KRbmeioADrSG856Lkb25QUQP3JF3meHPl2Cs/uuJorhWo2+WKDafkTzn1lvEhjjZX7kseluvkHioiqOO1kAVJN9vaXE2BOAQQ4oor9oZu9l4+ba4KE4cgwCVXTOKMpFVmmqtCEOK7DFtitzziikkwm/E/uc8UIQ5xSD53xYl5K6+5Yl66WmKLPOiKE/NCsgLIShxip/zkimZkDxKHoD8zhTIuLMnatQjxQx5rrlwIZpeu5cckbJbZBrsP8VteoKLFOgSclVmmX9+daAlCxGEs4Yb4QZrfEMMQnpxhLssVabpEiUOE3ShHmBOSRaNfVJrQFSIe2JZhmAX5PLYAZsQhmFqZYrsGtkUYH4LPNaNrTHCz46b3NyYJUyQEyw2WHX1ICVOsJVgAshDsyzhhsoS4I8MQLMFTlxx9wmQJwSbmlwxbgk0Rm6NU1gqTJcQOuSz9dtTvsS3oCsOPZR4CHkj2x/4BQMoeey3CMNlCbJTss+lasE/GTzQs8GFYcJqHAJbI/EIEgneS50/W0BLZQsAt+coVs5FlYMc8kmwnYb/kWa0lRUIA++FcQYqFAM4nXruiKUVDQDzY2ZXNumIyxUMAJ0XsL/z065fqqRCC6bxoCA+nSdwQ4zOMcZlqCNgmaRUe5acy9RCe85J9Mocs48LNrooQHo67OPbi+KtPN+M9VyU/wF0qaoLjLroZB5M8IOvan1PH5MAM91lykFklHBE/lgRiGo2Pk1kzcVJ7XzK+qoepmcNMuo8/4L8pGdj/xAH/wMD/yWj0B35avLFCom3FAAAAAElFTkSuQmCC"><p>Health &amp; Hygiene</p>
                     </div>
-                  </div>
+                  </div> 
+                </a>
+                 <a class="epbtn" href="https://www.facebook.com/">
                   <div class="square">
                     <div class="sqcontent">
                       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJrSURBVGhD7Zg9b9RAEIYPSqBGCjR8NVShTUsNLQWipoKaPwF9fgCIAoQUKV3+ATUlSFBBi2gQiI/3yd1Go9HeeOzcWbayr/RIvt3Z9bzrnU3sRVPTfHV1xWx1XjwV31dwTdusdEe8F8VAMUQbfZPXJfFC/BZvhd1SXNNGHzHETlL3xecVXK9TNm50RStd+vzTiZ7c6LLF7Pe+77P1Ygve19Loh0GUQK3PG4tM276tKdoS9D0X0XYpW40YYmvbsLZFN6qoSO+J0sd1l+xcPn5rh0G0UlfEuhXuErH26TJXke+rPd20uvb1E7GJfW1rijmZu8j2+VpMKZpgV6y78V3xOAmxRcxhF417FPm+9KIxqPZILwpbzHYrFL0SP8QnA79rbcR6+cOAexbZPnLsFDd4t7w8UbaYGesTzLZZRYcBuUVjT2Rvwqq/EbUVqqmWYLbNyxY8OZQdkBl7LIJeC1vMds9Gqt0k27ZO/jAgt9RYgv6In8IXc5dqCWbbIpWCJydyS40l6KP4cvyrnxh7IG4Y+F1r62OkiJzILTX2mngohhr5l2SoEXIjx5SGGrks7MpHENtXxUhaQ41sW83I1DSaEf4iP0sy5F/00YxwEn0VRx0Qc5pTK63TGMkkmI3zakb6qhlJqhnpqzNhZEfsLS/nbeSl+CUuiFkbuS0eLC/HNfJN8I5+TtwUiPfmqO1QZBIkhljGMLa8jzNn1EZOvY38FY/EdfFBoH0RtfEqmjVCLGMYyxyIOaM2cuptZNNbyyob5zWJGrFqRkRvI3wYs585M9Q+j9bIxnnIqZeRW6L24XkKkFtTU9PZ1GLxH4PpV4jASh2AAAAAAElFTkSuQmCC"><p>Home</p>
                     </div>
                   </div>
+                </a>
+                  <a class="epbtn" href="https://www.facebook.com/">
                   <div class="square">
                     <div class="sqcontent">
                       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANUSURBVGhD7ZlbyE1pGIB/yZkkckpjblBORbhAQjlOkSlRc+OQRLlCuaQci4Qo7kSEC+4mJmdD4dbUOJ9rcizkMAzP8y0ra69/2bbR3v9atZ966nu/v3///7vXd3i/bzXUqVOnThbtcCrOwr52FJFf8RG+w6f4EfejyRWG3/A9nsE2dsBovIX2FSKZyfgvbsV1diTohdcw98m0xvu4LUQRQ9EnFFOIZObjE+wcooh0IhIncxpzmcwpdEhlMfuzMXEyx7GlHXmhN/6HI0LUmGGfTfITPseFIcoJS/HvqFkWF4DpUTOwHQ9EzXxwDLdEzbIMxG5RM+BQPBg1mx4n7BucEqLK+B2dMy4Oi+3IA7+gicSbXyUMx6v4J+ZmsvdHS5AhIfo2Dq0reAE72pEnTuDuqFkWk/gLc5mEjEVLkz4hyib3ScScxD1RsxGFSULG4Ad0zqRZg6+wU4gKwB94OGqW0B1f4rwQFQA3POeKS3KalfgA24aoAGxEC8L0vtIB7+H6EBUA/+GbuDlEpUxEn9jIEBWA8ejEHxeiUnbhdcz96hXjSfE2dgnRF5wjFzF3Z5Gv4dH3MloZN7cjgQcr58tebGbHd+DnLsFD6BFgEbbAqvIzPsb0RYQMQg9WJlPpk3E4nkU/0yOA+hmWSFU/Nsc3KwtCVIrJ+GQ8Jn9rszSJ82jV7KVfjKdT+2pyBzAXTWZaiErpiQ7BGzjKjgxMwvLGqtnjtOeZJA7VmiWzAt/ihBCV4h/fiSa7AdtjTJyEtVrydNkVk8fmmt7OrMbXOCNEjXEY3sWHaDnjcMtKQgbj1y4BTabqFcRy9Jv3HiwLn8YqfIHWZ1lJJMm6BHSf2heiKjMHTWYtppfmmB7oz8slIVmXgN41ez3VL0RVxnLFZdSKOb1p/h/Sl4AuyzOjZvVx6byEd9Cy5kdIXgI62X3ik0JUI9yp3diszSw0v+c2JgsXgHP4D1Z99crCJ2LV7KqTdZ6pFL8U388kl+aa4xFgEzosjuAArBTn2Q70d9OTv8nw3O8i4HCzFiv3DtKd3qfwDH0/416UO7zQ8HbGb9l7M5daNzpfsjqfLEtcZt0A3UBbYa7x3szzizeavmC1OjiKy9DXE4XDIefTKMwFRp06dZqMhoZP6DOqDttmTWIAAAAASUVORK5CYII="><p>Phone &amp; Internet</p>
                     </div>
                   </div>
+                </a>
+                  <a class="epbtn" href="https://www.facebook.com/">
                   <div class="square">
                     <div class="sqcontent">
                       <img src="data:image/png;base64,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">
                     <p>Social</p>
                     </div>
                   </div>
-                
+                </a>
+                <a class="epbtn" href="https://www.facebook.com/">
                   <div class="square">
                     <div class="sqcontent">
                       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALqSURBVGhD7ZlLyExxGIfHLZQFhXJJkrIRlhaSJRK5lJKdDSkpUYpsRMllJ+WyU0quC7KxYENKYiNWlBRC8fXJJZ5nZk5N49yb78yZr/+vnjoz//f9ve87c86cyzSCgoKCeqHZsKmN2wOncXAGfsFQG7dPgWsDo9PwETaCjYvbn+AkDITchfz0bbxbm8G1Wc1XNZfHg7uS38JuWNDG7fHgWtyQtdM2eNPa/G8Q5ZoxtVfnIHEKg1StMEjdFAapm8IgddOoGGQ63IKsQYwxtpbaDh/gOSz3jQS5Zoyx5tRG8+Eu/IDDMBc2QJJcM8ZYc8zVo28aC3vhGzyERaCWwPHWZqxcM0aZY64eeulZqWzkMXyFXTAGyspcPfTSMxpyRDUJjsJPuAlzoFsrwd0lSa4Z0y299NTbGtYaEVn8JbwH7/SSNAHmtTZj5ZoxSdLbGtaKG7i0psI5+AMX2q/TNBOyDnZj0mQNa1nT2lk1M+Ut6Tt4Bat8I4eKHOxZsqa17aHU7bEPEK6BDwqOwWQoorT4Ml72YC/2VOj52Bd4Akubr5I1A/zUdoLPse6BZ+6sM7sYa465euiVJnuxJ3vLrb+worXZ/Hn0hLUa9sF5eAA+ozLuN7yG23ACLkHWIMYYa465euilp97WsJY1rR39vNuTcbll8H14Ct/brz0LP4MrcAS2gp/SROhUmYtGPfTSU29rWMua1rYHe7GnQoM8gouwH9bBQsj7qLOXV7/WtLY92Is92Vsl6uUgfdWoGeQgZA1iTG3l/hz93h/wjQS5Fp2f8h53lWka3IHPsB6yrrWMMdYcc2uhxeC54AX4C5P36tdYc8zVo6/aAt4UXYUpvlFQ5pirh1590R5wX/fA7byx8oLQf6WivxO6ca3zotFcPfTSs3JdhuuwDHbAWfAObxg8+6ZhjLHmmKuHXnpWLotGjb2FG3AI1oD7f9y3Ia4ZY6w55kY+fRlkLdhQ1k1SHumhl55BQUFBSWo0/gG4bdKHRo6I5QAAAABJRU5ErkJggg==">
                     <p>Travel</p>
                     </div>
                   </div>
+                </a>
+                  <a class="epbtn" href="https://www.facebook.com/">
                   <div class="square">
                     <div class="sqcontent">
                       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHcSURBVGhD7Zk9SgRBEIUHE39CQTMVRTAyEw09gpmYG3oAj+BPsGLkAUQ0FRQEDc28gwjGJl5A32O6l3borume7Z6VpT746HG2t6qes7MsTKUoijLx7MBzeA+fM8uaZ3AbFmMRPsIf+AoH8NTxCn43zklyL9/jnmNN1maPB7gAs7IK3+EbvIEz0MesWWOYM2sT1mYP9mJP9s4CC33AJ9g26DzcqA9FuId7JdiLPdl75DDNEPwvfprVxz68qA9FLiH3+nB7ZAkTuhLrZpXg/uX68A8r0K0Vwu0xUphQiCl4aFaJPXhbH1ZbRnIH+ZqEr0enMKEQZBpemzWWA2MsoR5JYaQQ/4GoMDEh2m72HLT1EMMsQb7wAtuuxCYsebVYmz0kuIezcmbOPkRM6WD3+b6RcsHa0qeCiJ+etjD2df58KB2EPUJhYm6BYBh7/gv2FYS9msNGhbA0w7h/78K+grCXO3RSCIs7vL2pWMg26SMIVzu8nSEphMUNw4Kk7yCk05Vowje6X2/jCEI4Q+cQPsYVJDsaJAENkoIGSUCDpKBBEtAgKWiQBDRIChokgV6D8GHMmvEIEq45zrG2BonFBinZpI8ewyYn8LiQrF08CJ8j+h5ilpC9FEVRJpKq+gX+TNm+M4CuwAAAAABJRU5ErkJggg==">
                     <p>Clothes</p>
                     </div>
                   </div>
+                </a>
+                  <a class="epbtn" href="https://www.facebook.com/">
                   <div class="square">
                   <div class="sqcontent">
                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUOSURBVFhH3Zh3iB1VFIc3Gg2KDaNRib3EEhWNDVHsLSZGRTTRGBXFjiL2gqIo2LATETVqYsGOiqZBUEiUQCCxgGBP/tFYwB57+b4zM7t3JzNv9+2b/KE/+Ng5992duXPvueecO13/R60JR8JpsIsNfWgl2BtOhaNhNVhhuhC+g38SnoLVoUqHwceQ9l8Kh0Ljuh58wJtwLOwFU/O2x6CsifA3LIHzwVk8D76H33K7Me0GPmw6DLYh1yCYBg7yQBtyjYBf4V0YakOiHeEHeA9c/kb0LPwCm4TVW8PB354JK5PXv8P2YS2vK8GXOjysDrUKLIMXwqrWq6BvqbXgD9A36+RLOcBbw+pQO4M3uyasat0F9hkCB+fXZ0ErfQnPZ5edaX/wgSeHVa3JYB998sT8+gBopY9gVnbZmfYAH3hxWNV6Er7NLiO02P+YsOr1BbyYXXamNeBPMKTUaSZ8ml12jQIHeHZY1TLYGxXuDqsBvQE/goOt0mcwO7uMh/8Fj4ZVrUPAlzAbNSJv5A3PDau3tgR/uyGsTO+Ag67T/eBLbBBWAzLUmLLcecNsSHQbOECXttBNUG4rtBH8DK+E1aa2hjvhOTCspFngINAXnZ3twB07HkxbZphUm4Gx8OWwerQquHP9bXcbcllAnAPGzodhX1hO7joDslP/FTgD7rT0Ri61A/I3s4d/P4HyrKoiNt4LxtKj4K287TIoZOoz5NhuJPC+TsRJ0C2XwsF9CP6DGgduDAe7oQ25tgWXcApYBNSVT86W4ccHFzgAZ6qQK6bbWCFNAHPzevA+2NesFI0LwE5b2ZBoNHjjB8MamAz0F4AV0No25LJE06/1x31sSORq+lxryO5B1AXiGeC0N11omod9blWGWhf8zd0eAdgBrKNRoTPAzuW37ES6kRvFAF8nZzYqJB3UQFynMeAA/duUnBQHWHapQkYI68kohN0cj3hRI53XAbZK/nvC1eDmccnqjgDKbGQksMas007gM6/Q+AlaJe3rwM6bhtVbhpfXwN9TWp07jgD7eCSok75nrt5BYz4sBqe1SnPAUFDWxvABeKPbYXMwLIwFY6OzZHAv60xwgB4jquR9Xd7uIH8V+A8G0rKcNX3lobB6ZLjwvOEgjrOhJB/iS38DprZUhg6fV3VocpKs3H3p7hcwnRkU34ZyKHkc7LxrWJkMwM6q7a2WyQGYEaxy0tVxBzvAW8LqrWvB3x4IK9Ep4A/uZtPS+uCy2Wa1XMgHPQG2e/DpS0XRcGlYPTJ3e6i6BMxS7maTgX3nQuUmuwj8JzsVeGZwxpSDuwdsjwDaD1kF6eO6QupzTkCRl1NcsbqaM7QFmMit7VIH9zD0NHgTK52Vob+yXvSw/jl4fCjkPfT7G8F9kLpRWzKUzAMH53K3M7hCxlAP6244y6ltoBH59u5Gnb3sR+3K1XkJ3FyWdNZ+dZmkX9J/3NnmRL9mNSWDr5nL2XTpB/wh6XhwWU8Pq3mNBMst682o+9qVO9alcIOsKJ0AToIlX9syLhke0q9ZTcuy3gEOaJn9WNnO23kedlN5lCxiZysZV900bkAL1LZlePEY4PlWfynLNoO71Uz5q6u4+80YVs6TYD8wzVn4ar8O9rsPBixnz3JMX1wE5tWF8DUUA9HJDeI3g6HIL7HGS/O1xULRr4xVvGfqjl3IiuYO8GBlGWWKMgVeDqavvr6SuuR+fdXfPAX6Wc4Pl+kB6r+qrq5/AelqSFekHa94AAAAAElFTkSuQmCC" style="padding-top:5px; padding-bottom: 5px;">
                     <p>Pets</p>
                   </div> 
                 </div>
+              </a>
+                <a class="epbtn" href="https://www.facebook.com/">
                   <div class="square">
                     <div class="sqcontent">
                       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHASURBVFhH7ZdBKwVRGIaHhVJ+hMKOsqCEYqls2ChCssTKAhsbGyxYWyg/wdKGH6AssJGUncKf4H3m3FOnMTP3zsyZuWGeevIN+t5vjnvmjKCmpuYf0Ss35W5BNyS9vLIqP+WZPCooPei1Ir3A3X7IvvDKDwOSnl5Wkrs+NqVX6Fm4b5d8l9yxb+wqkpGbBXltylKgNxm5KdygCZkXgOVeljwOdmThP0ET6E0GWWSSnZjXKW/klWRjXMoyNkcUMsgik2xWtEP+YELeS/eH3Y2vZeJmkP0gx8OrCFvyTton/rAcqkiybC4zMMsPZiXLzBK/yh45WJFkkUk2MzBLIrdyzpSVMi/JTmVUPkn7OeTl4K0htS/i+pJJ9kh4lcC6PDdlMCmfJWcwUrORYE9+ZfRQQlrfC7lmyngIto225YkpQ6j5XlHS+u7LA1PG4w5o77S/IbW7/cek3XnNnJKWtL5ufizRX0j7DE5LdlwrzkiXpL6ZB6yaesCitDzgUpv8OyvYLnINGHcq+NQl94BlkXlAXrkfpT0BTiVP+rJ4kWTYPLIXZSK8UbCb7AnA2ejzH/Yo9CbD5jGc+0ZfU1PzywmCb+1/u0piVmEWAAAAAElFTkSuQmCC">
                     <p>Automobile</p>
                     </div>
                   </div>
+                </a>
+                  <a class="epbtn" href="https://www.facebook.com/">
                   <div class="square">
                     <div class="sqcontent">
                       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEVSURBVFhH7ZexDcIwEEUjUVGzBoiCAdgCxAqIlp4eFoIpGAAmoKaG/x2fsEyixHZiInRP+nLs2HdPFhQplIGxtBkMYzsSij1sfEl3XzZESG6t6pn4886ZI0/khRy4AKTp3o6+gP9eRq6zBmuxJmsnMUFuyNrMSqS5CHHcITMz+8B1SmzN7Psca7I2e0QxQs7I0cxK/CbCFNkgvuQCcdf986x9QdgrGB6moByukxPqJP11t45cwgkJYoW4198kJ8RIsscdcX9GjcifImfYszU8kJugnipYQW+CV4T7q8J3beH+1gRt7ggVTEUFU1HBVFQwFRVMRQVTUcFU/leQX2J9RogW5CdjnxGiBXMRLPiLKIoSRlG8AfrBq0eI8j19AAAAAElFTkSuQmCC">
                     <p>Miscellaneous</p>
                     </div>
                   </div>
-                
+                </a>
+                <a class="epbtn" href="https://www.facebook.com/">
                   <div class="square">
                     <div class="sqcontent">
                       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK/SURBVFhH7ZhJrwxRGEALQYiZBRIihp3EUogVFoINwgKJEGzYkAgeNmJcEPwEEXPMQkRiDPETjDuEmNlYCOfUrYru0v1eVdd7+iWvT3JS39dV1f31nep2Ry16Kv1wHd7EN/gzOd7Atej5pjETX+FlXIxj0ILGJvkVfI4z8L+zEN/ivDirz3z0Oo/1GIdrcGtyNC/FJLQbp8dZx3id10+Ms7/0x2P4Ho/jgeRofhQ93xBncEsIc7MdT4Uwpjc6NE7jMF+owNzP8LzXFWIUfsYBcVbNLNyUHLN4/RccEWdRtAofYJ84+xdff4Qr46wAy/BCCKvYiE/xcHI0z2KLLA1h9BDT8WtXnsPvyTHtWs/fD2F+NuOhEFZROcam4OsQVmHxtrD8wMEhjJejq2h+HZ0oMgS/hTA/FugHZbFAJ4/UK/AIer98xEEhjAu6hhZUWeBQ/BrC/NhFl0JYRdrFtu6zJM9iKy0JYXQXa3Xx2SSXBXgvhPkZiZ9wYJxV4+SwhWpNkrS70kniWH6M7U2SJ7gizgri0rAjhLnZib9raItllxm/xHm8iL18oSgTsMhC7SPRMZl9QtiV6UJ9Al2o/fIf0DE6BxtmNvomPvLaYxG+w7lxVhsLX43b0HVvNO7FXVgKu+gFOgMd/OlmwdnsZLqNTpxpWBSL3R/CKqaia2jlMKmLJ31CuI653bKrfqEt5nbLidAXGyFboJ+zD33v9ZiOzQ4L7Cos8A66w2nDl3gS7f7lidLUAl2GnDg+IuutGk0tsNYYlG7TgmmBlQVlabVgPVotWJZWC5bFAtOFur3dU1MLTBfqg9gpT5L0xkatJNvF3fJZXGsMFtrN+EdRV/05tBtL7wdvof8YdHaRk9F9pDvxUoxHi7QlK5u8rP482ICdikUOR38zF+2aMvfmZg/6Qf4mTn/A56XMvS16ClH0B9Je11gY87JQAAAAAElFTkSuQmCC">
                     <p>Entertainment</p>
                     </div>
                   </div>
+                </a>
+                  <a class="epbtn" href="https://www.facebook.com/">
                   <div class="square">
                     <div class="sqcontent">
                       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARWSURBVFhH5ZhpqFVVGIZPZjZYZpmFEZFS/cgG/CMlNmBEGZWiRSqiWEFgSVgalJlm/rCZioQoGgQHMEQyVISKBitoMDXDChtU0qjAtKzM1OdZ66579j1du2fve/e5gi88nPWtfc46a39rfd8aKoeTToaRMB4usqIRuh2uj8X/1R2wC/ZneA8uhtI0FPbBc8GK6gsr4cpgRY0BO/QZ6MFLYQ78A/5+AZwOHaqj4WvYCidagRzCb2A3DLaiSX7vOzg+WFXdA8mbencaHAsdojvBhm8OVtQLoEeGBSvqVPB7jwerpU4Bn62At5vKP8BoOAIKyx/rqQ3BirIjDtlrwarqBPCPnw5WS+lxn30MZ8IosIPW2eEBUEgDwUb0YpKetO7qYEV1gftAr26H3pDVbPA3PndaaPcCh9oh/xceg9zenAk27FsnTQbrzgpWnPRvgnUGx15wHvpSBspLYMeWwwXwAfjd7+E06APPN9U55Llko1tisVl2LHn0BvgZHPLpcCQMhx/BPxQ7/AqcA4/Cb2D9p6AX9f4tTXV3QS75lstisYWOAVOOntFbgyCro+ASuArOA4Pqb7ATb8E14HD6uQ4c4k/gOMil3+HlWGzW+bAe/LOFkFJPa+oPm2EPLALntOoHRrRtOAIToRvkkm+oh54KVpQN/QlO7AlWtCHn5Da4MFhVzQU79yT0tKKoxoJv61xZCjbqUJwLbcng8fsGWq1uBZ9dHqx2agi4iuhNU0G9Q5HyoimlVgaaz2YFqx26FoxCG7vNipzaCB/F4n/0LayOxeL6AnbAX2DqOBvyyLnmC7Y2z4xsg6d23c4lU8N8cK78AXbYoatXN4LeN1/Wahz4zClUWCZTPWcuewBscAbUK4PLHNfa+mxk294TwSqoy0DP2VDCpS6P1oB5s1Yun7b3E5jYC8t59xD4pkWGw+2XGcB1Nys3vOml69mplyYzgZ2o3Qg4OqmDS6zoLBlURqtRm1UKkq/AYKzdojVU5jvzXlZpK+dq5WfunUxH6mGwE2kPqV4FN69ut9wRfQ6dpivADroGJ70LX8ZiCEKfF976t1eeDJ2H84IV5Ub4jVgMEW2kPxOsTpBnZz2kp5TLmwn8nWBFeXj6BXLvCztCnkNc008KVqUyBeywXkvzMkW1y2NDdR34x55ZlNt6T37p3PIgqO6wE9KwN0Tuyt1Vu63vYQVKtwwjwPPIJkjHzRfBA5gnvYYo7WamBqvqvbVgp1JnXVWU1yja9warZJnfvJHwTJJOa3eDHUjzzPVZj6WDmZ32fieln1KVVohJwYqXRXrPYU1Dql4H555zUN0P/q7U6zq1CjzLmANVupG4KVhVeftgvVGszgBTkIf8UpVNxA6x1yN6z6HPyrxn/ns/WPF24lfwzF2qnFeeR7x3+RD0ysH2fWluLgZvMix7HVKqvHLzLG0QeB/j7evBpNeeBb/rDv4RyM7TUuU9TtdYbFPO13q/e6ipUjkAl+kTcPgI2KEAAAAASUVORK5CYII=">
                     <p>Hobby</p>
                     </div>
                   </div>
+                </a>
                  
          </div>
+
 
          <div class="col-md-4">
           <div id="piechart" style="width: 400px; height: 500px;"></div>
@@ -190,6 +212,29 @@
       </div>
       <!-- /#wrapper -->
     </div>
+
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"
+              aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Confirmation</h4>
+          </div>
+          <div class="modal-body">
+            <p>Do you want to close this dialog?</p>
+            <p class="text-warning">
+              <small>If you don't save, your changes will be lost.</small>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
       <!-- jQuery -->
       <script src="../vendor/jquery/jquery.min.js"></script>
       <!-- Bootstrap Core JavaScript -->
