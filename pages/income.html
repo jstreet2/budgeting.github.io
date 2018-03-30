@@ -70,20 +70,37 @@
                </div>
                <!-- /.col-lg-12 -->
             </div>
-            <div class="row">
-              <label> Salary </label>
-              <input> </input>
+            <br>
+            <div class="row" style="margin-left:200px">
+              <label style="font-size:18px">Salary</label>
+              <input id="input1" style="margin-left:95px"> </input>
             </div>
             <div class="row">
-              <small> Occurrence </small>
+              <form>
+                <label style="margin-left:215px"> Occurrence:</label>
+                <input style="margin-left:70px" type="radio" value="Weekly" > Weekly
+                <input type="radio" value="Bi-Weekly" checked> Bi-Weekly
+                <input type="radio" value="Monthly"> Monthly
+              </form>
+            </div>
+            <br>
+            <div class="row" style="margin-left:200px">
+              <label style="font-size:18px">Investment</label>
+              <input id="input2" style="margin-left:53px"> </input>
             </div>
             <div class="row">
-              <label> Investment </label>
-              <input> </input>
+              <form>
+                <label style="margin-left:215px"> Occurrence:</label>
+                <input style="margin-left:70px" type="radio" value="Weekly" > Weekly
+                <input type="radio" value="Bi-Weekly" checked> Bi-Weekly
+                <input type="radio" value="Monthly"> Monthly
+              </form>
+              <input type="submit" value="Submit" onclick="myAlert()" style="margin-left:215px">
             </div>
-            <div class="row">
-              <small> Occurrence </small>
-            </div>
+            <script>
+            function myAlert(){document.getElementById("total").innerHTML = "Total Monthly Income: " + (parseInt(document.getElementById("input1").value) + parseInt(document.getElementById("input2").value)) }
+            </script>
+            <h2 id="total" style="text-align: center"></h2>
          </div>
          <!-- /#page-wrapper -->
       </div>
