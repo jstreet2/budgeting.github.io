@@ -109,7 +109,7 @@
                </div>
                <!-- /.col-lg-12 -->
             </div>
-            <div class="col-md-8">  
+            <div class="col-md-6">  
             <a class="epbtn" href="#groceriesModal" data-toggle="modal">     
                   <div class="square">
                     <div class="sqcontent">
@@ -206,8 +206,8 @@
          </div>
 
 
-         <div class="col-md-4">
-          <div id="piechart" style="width: 400px; height: 500px;"></div>
+         <div class="col-md-6">
+          <div class="text-center" id="piechart" style="width: 600px; height: 500px;"></div>
          </div>
 
          <!-- /#page-wrapper -->
@@ -687,6 +687,8 @@
       </div>
     </div>
   </div>
+<h2 style="text-align: center">Total Expenses: $5090</h2>
+
       <!-- jQuery -->
       <script src="../vendor/jquery/jquery.min.js"></script>
       <!-- Bootstrap Core JavaScript -->
@@ -717,7 +719,8 @@
         ]);
 
         var options = {
-          title: 'Expenses'
+          title: 'Expenses',
+          fontSize: 14
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
