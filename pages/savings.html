@@ -73,12 +73,12 @@
               <h1> How much would you like to save?</h1>
 			</div>
 			<div class="col-lg-6">
-				<h1><span id="amt"></span> %</h1>
+				<h2><span id="amt"></span>% of income</h2>
 				<br>
 			    <input id="savings_amt" type="range" min="1" max="100" step="1" style="width: 60%">20% Recommended</input>
 			</div>
          </div>
-		 <h2 style="text-align: center">Monthly savings: $2234</h2>
+		 <h2 class="navbar-fixed-bottom" style="text-align: center">Monthly Savings: $900</h2>
          <!-- /#page-wrapper -->
       </div>
       <!-- /#wrapper -->
@@ -99,6 +99,7 @@
 		<script>
 		var slider = document.getElementById("savings_amt");
 		var output = document.getElementById("amt");
+		var savings = document.getElementById("amt").value;
 		output.innerHTML = slider.value;
 
 		slider.oninput = function() {
