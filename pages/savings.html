@@ -28,6 +28,10 @@
 	.nav, .navbar-top-links {
 		text-align: center
 	}
+	.label {
+		text-align: center
+	}
+
    </style>
    <body>
       <div id="wrapper">
@@ -44,7 +48,7 @@
               </li>
               <li class="dropdown">
                  <a href="savings.html">
-                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALHSURBVGhD7Zi5jtUwFIaDoIKGVQIatgbBK9ABBWIHwTwDYmkQEkj0FGwvwPIGbAWLhGh4A5AYDTVUQ8cMAlHA/zk53Mgkk+s4o1jgT/pE7NzL9cnxiT0uMplMJpPJ/OOskw/lF/krMRkTY2OMnbyS7+QZeSAxz0rG9lIuyXZJ5LtdK032SMa4zbVa2Cf5EKyWb6t/z1em0AeMkbG2Ug8ESCfsrISx+6B3ICnQOxA/nUOysXJaoqeWzwo5I8/JNXQEcFw+k98kv4GL8ok8KkMICqQpI9fkgvwkO1+BFTz51/K7vCePSQr4giQ4+rjHa78tS9EZ8WvkjbwpD8qfdHSwSX6Us3IHHS1wj8/MSb7TxKDFzlO5If3PtUEmPsgrrlWyVZ6q5NrgMwTz3LX+ZtBiDwmEKcSUsUyslHclmaQ2kOvbknvAq5bvHHGtCdFTyyckkKeS+W/ckfPypGTgyDX7p1vSeCAfl5etBAUSmxHeTmQFmEI8fQbuc1pyb4trFcUJSbbqRGekb41QsNy/5FplPTA4m0J1VknuWZB8h+9ucK0JoxS7BXLRtUYOZIipxToB00ytza5VTq2v5eUfoqeWT0ggrNgUrkFBU9gEQxaQTNHH2mQkV+xsO/zXL69anj5TCbkmQJtyu+QPeci1JkRnpG+NGGw7WOTqCyJvJ7KCNp1g2RZE8APps0Vh29G1RWEhtC2KX+TGoMV+VbJp/Cxf0DEFDIzMMGXuS4qZNxMbR7JCTXCPTeh62UT01PJhG8+hRJ9t/GFJEfMg+A3k+pH0a6KLoECaMjIUZKltCjURnRG/RsZkkGJvOgQYqw+CAqmns+lYZqw+6AzEDug4BEuVvZIxLnlAB3ZkyvEk6UxJxvReTnVewAExfxDxRxCRpyRjYmxrZRCXpf+fXZfLzeC/y6K3X1pquQ5dCPsw1u9mMplM5r+kKH4D1rhpgsIBV3wAAAAASUVORK5CYII=">
+				 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOTSURBVGhD7ZhNb9NAEIaL4AQXPiXgwndiuwIOXJE4AAfEN4jyG1CBC6oEEtLGLdBDW/gDgd57oFBF8TpF9MA/KBIVnOHU3iiIqofwvptJaRyniWOjWOBHGmU9u2vPeGZ2N+7LyMjIyMjI+Jc5PlraYRf0pK30kl3wq6kSY5OepI1ibmsw0MeEecet3LKVdy5lMkDbIFrMDSevvIP0PKe0JarU4aiyY6IzUjogqmYcNXuag9g+pWa2WgX9ofbrD1LSoKNttJG2sh3KekcIw8nfY2r2MCUNOtK1I2mga0eC4UySnJrbTZHLtsROrSaq1U1Y1W5D7pwY87eJtiNs17uK1WYG8pPPoCD/f1jKf5N3/csyrCMiORIWETz4kaX0Moz52nYJFPjmMeedrfxf+C06qnLFFLHSd+kcdezjst8qSrEjEqwRPPA9jBizXH0eN14VdUuOPi3vgaFfcM+F3Ih/SNRNsI9j4MxnzhF1A4kWO98K+keD41rBSEA+YeyQqLBXVfZbyrtBYVvUNG4IsoDxZVE1kGixR3GEKcSUWYvE1NRmzHnBSJraMKJXEYUJ9nEIl1pJwUtmjhA7tYJEcQRj38KgolzijernMHrRcv3rxnAI29AvwfhxGYYo+q/g5LRchhLJkbgR4erEqLBt0omRoBMB8q6+afqeePt4jXnXGC3TKcSOSLc1woJlP970fV6bmqBxkkLrOaPmtpg0Eyc5h3OtZ7O7zAChJ8Ved8Qp6Hu87qkjSaQW9wm2O0ktR5X28rqWWvq76RRip1aQKI5wx2bhyiXf9DgLm84wCiYSiJTRYW+SYekrdh47YHxg+dUTuEfj8ssVS1Kuf6R8BPoV2/UvmDlC7Ih0WyN1eOzAOOzYfzZErk6MCqWeToRjODbxDZEEHcHbi3xE4bGDBm50RDEboRxRgkVeJ9liV/ohZBkP/AaHPFFvCA1jZJgykJcsZq5MaA+ayNRqYgV67Si9U6Y1EDu1msAx3nyU6OIYb7neRRg8XXsRcoyvnaRfB2uiHZEcCYtIUjBKrVIojNgRCdZIL0mk2MM+AvRKRyI5sj6cpjADn2V6paNtbR2pf6DjRzBRpQ572OunjRt+oCNcKrGSzCOUAwxnymQA9n3kUi3mtoYfiLEsFjFh0XieKsEfM9h2Us1tF3M7I1/QD5pupvzH0v3XSPy53PRst3J2LbRoR90Iu6FXz83IyMjI+F/p6/sNDlFSmVn4Ic4AAAAASUVORK5CYII=">
                  <div>Savings</div>
                   </a>
               </li>
@@ -64,20 +68,17 @@
             <!-- /.navbar-top-links -->
             </nav>
          <div id="page-wrapper" style= "margin-left: 0px" > 
-            <div class="row">
-               <div class="col-lg-12">
-                  <h1 class="page-header">Savings</h1>
-               </div>
-               <!-- /.col-lg-12 -->
-            </div>
-            <div class="row">
-              <label> How much would you like to save? </label>
-              <input type="range" style="width: 20%"> </input>
-            </div>
-            <div class="row">
-              <label> 20% Recommended </label>
-            </div>
+            <!-- <div class="row"> -->
+            <div class="col-lg-5">
+              <h1> How much would you like to save?</h1>
+			</div>
+			<div class="col-lg-6">
+				<h1><span id="amt"></span> %</h1>
+				<br>
+			    <input id="savings_amt" type="range" min="1" max="100" step="1" style="width: 60%">20% Recommended</input>
+			</div>
          </div>
+		 <h2 style="text-align: center">Monthly savings: $2234</h2>
          <!-- /#page-wrapper -->
       </div>
       <!-- /#wrapper -->
@@ -94,6 +95,16 @@
       <script src="../data/morris-data.js"></script>
       <!-- Custom Theme JavaScript -->
       <script src="../dist/js/sb-admin-2.js"></script>
+	  
+		<script>
+		var slider = document.getElementById("savings_amt");
+		var output = document.getElementById("amt");
+		output.innerHTML = slider.value;
+
+		slider.oninput = function() {
+		output.innerHTML = this.value;
+			}
+		</script>
 
    </body>
 </html>
