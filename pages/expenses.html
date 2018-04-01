@@ -48,7 +48,6 @@
   }
 
 
-
     </style>
       <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <!-- MetisMenu CSS -->
@@ -103,13 +102,15 @@
             <!-- /.navbar-top-links -->
             </nav>
          <div id="page-wrapper" style= "margin-left: 0px" > 
-            <div class="row">
+            
+            <div class="col-md-6">  
+
+              <div class="row">
                <div class="col-lg-12">
-                  <h1 class="page-header">Choose an Expense</h1>
+                  <h1 class="page-header text-center">Choose an Expense</h1>
                </div>
                <!-- /.col-lg-12 -->
             </div>
-            <div class="col-md-6">  
             <a class="epbtn" href="#groceriesModal" data-toggle="modal">     
                   <div class="square">
                     <div class="sqcontent">
@@ -207,7 +208,8 @@
 
 
          <div class="col-md-6">
-          <div class="text-center" id="piechart" style="width: 600px; height: 500px;"></div>
+          
+          <div class="text-center" id="piechart" style="width: 700px; height: 500px;"></div>
          </div>
 
          <!-- /#page-wrapper -->
@@ -719,8 +721,10 @@
         ]);
 
         var options = {
-          title: 'Expenses',
-          fontSize: 14
+
+          fontSize: 14,
+          legend: { position: 'right' },
+         
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
