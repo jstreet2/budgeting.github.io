@@ -63,39 +63,34 @@
             </ul>
             <!-- /.navbar-top-links -->
             </nav>
-         <div id="page-wrapper" style="margin-left: 0px">
-            <div class="row">
-               <div class="col-lg-12">
-                  <h1 class="page-header">Income</h1>
-               </div>
-               <!-- /.col-lg-12 -->
-            </div>
-            <br>
-            <div class="row" style="margin-left:200px">
-              <label style="font-size:18px">Salary</label>
+            <div id="page-wrapper" style= "margin-left: 0px">
+               <h1 style="text-align: center">Income</h1>
+            <br><br>
+            <div class="row" style="text-align:center">
+              <label style="font-size:18px; text-align:center">Salary</label>
               <input id="input1" style="margin-left:95px"> </input>
             </div>
-            <div class="row">
-              <form>
-                <label style="margin-left:215px"> Occurrence:</label>
+            <div class="row" style="text-align:center">
+              <form id="occurence1">
+                <label style="text-align:center; margin-left:70px"> Occurrence:</label>
                 <input style="margin-left:70px" type="radio" value="Weekly" > Weekly
                 <input type="radio" value="Bi-Weekly" checked> Bi-Weekly
                 <input type="radio" value="Monthly"> Monthly
               </form>
             </div>
             <br>
-            <div class="row" style="margin-left:200px">
+            <div class="row" style="text-align:center">
               <label style="font-size:18px">Investment</label>
               <input id="input2" style="margin-left:53px"> </input>
             </div>
-            <div class="row">
-              <form>
-                <label style="margin-left:215px"> Occurrence:</label>
+            <div class="row" style="text-align:center">
+              <form id="occurence2">
+                <label style="text-align:center; margin-left:70px"> Occurrence:</label>
                 <input style="margin-left:70px" type="radio" value="Weekly" > Weekly
                 <input type="radio" value="Bi-Weekly" checked> Bi-Weekly
                 <input type="radio" value="Monthly"> Monthly
               </form>
-              <input type="submit" value="Submit" onclick="myAlert()" style="margin-left:215px">
+              <input type="submit" value="Submit" onclick="myAlert()" style="margin-left:70px">
             </div>
             <script>
             function myAlert(){document.getElementById("total").innerHTML = "Total Monthly Income: " + (parseInt(document.getElementById("input1").value) + parseInt(document.getElementById("input2").value)) }
