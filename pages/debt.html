@@ -25,103 +25,184 @@
       <![endif]-->
    </head>
    <style>
-	.nav, .navbar-top-links {
-		text-align: center
-	}
+      .nav, .navbar-top-links {
+      text-align: center
+      }
+	  
+      .epbtn{
+      color: black;
+      }
+	  
+      .sqcontent {
+      position:absolute;
+      width: 20%;
+      padding-top: 7%;
+      font-weight: bold;
+      text-align: center;
+      }
+
    </style>
    <body>
       <div id="wrapper">
          <!-- Navigation -->
          <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-
             <!-- /.navbar-header -->
             <ul class="nav navbar-top-links">
-              <li class="dropdown">
-                <a href="frontPage.html">
-                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIeSURBVGhD7Zm9Sl1BFIVvYSVWFhYWKUQIeQEhP5W1JH1IF0htGcgDpDTYBWyt1QewSpVnCCkkWqRIFUiKgMn69CwYNnMg4MxcHGbBh3MXe/bMuhzvOcNZDA0NDeX0SLwSbyrDGqxVRR/EtbgUXyvDGqzFmkX1QvwSj28+tdETwZp7N58K6VCc3A6b6lSwdjEdT1jvxcdK0NuK695ZseGFOBe5jdwFetLbahLk5e2wqOg5gvyPug7Sxf9IN79arTSCzCltuD39XZ9AtbxqQVbFt+nvu4maXrUgrTWCzKnbIJ9EPAxtioPgwfOJ6FPLnOjT26oehLvvkeBY+lb8FQ8ENZ+Fj6w/BI8dwNg+NdQyh7n0wKdn80cUP2t5Mw6Sq5t7hkrnorm6YooNWWxfbIlnIg1yJvDhSjgIY/vUUOsg9MCnZ/MgbCDFQaLvINGn1kFSmgZhA/52zYrYCB6sTUSfWuZEn95W9SC5p18eL14HD3Ymok8tc6K/tDM7PpeEL60vwpv6KXxpMbZPDbW+tBjjL/XM7s04SK4OchtM56K5umKKDbsK8l1wJ2acBuES8l36j3AQxvapodZB6IFPz6ZB2Jjv0oZfpt3gAWcLiD61zIk+va0RZE6xYTeXFov5m/NmHCRXB7kNpnPRXF0xxYZdBenihnhvH1G6edHjV2+8Dmulp+K3KPrqDS3jZSjn+ip6KFq9nmatoaGhoVSLxT/XpNQM2j2joAAAAABJRU5ErkJggg==">
-                   <div>Budget</div>
-                </a>
-              </li>
-              <li class="dropdown">
-                 <a href="savings.html">
-                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALHSURBVGhD7Zi5jtUwFIaDoIKGVQIatgbBK9ABBWIHwTwDYmkQEkj0FGwvwPIGbAWLhGh4A5AYDTVUQ8cMAlHA/zk53Mgkk+s4o1jgT/pE7NzL9cnxiT0uMplMJpPJ/OOskw/lF/krMRkTY2OMnbyS7+QZeSAxz0rG9lIuyXZJ5LtdK032SMa4zbVa2Cf5EKyWb6t/z1em0AeMkbG2Ug8ESCfsrISx+6B3ICnQOxA/nUOysXJaoqeWzwo5I8/JNXQEcFw+k98kv4GL8ok8KkMICqQpI9fkgvwkO1+BFTz51/K7vCePSQr4giQ4+rjHa78tS9EZ8WvkjbwpD8qfdHSwSX6Us3IHHS1wj8/MSb7TxKDFzlO5If3PtUEmPsgrrlWyVZ6q5NrgMwTz3LX+ZtBiDwmEKcSUsUyslHclmaQ2kOvbknvAq5bvHHGtCdFTyyckkKeS+W/ckfPypGTgyDX7p1vSeCAfl5etBAUSmxHeTmQFmEI8fQbuc1pyb4trFcUJSbbqRGekb41QsNy/5FplPTA4m0J1VknuWZB8h+9ucK0JoxS7BXLRtUYOZIipxToB00ytza5VTq2v5eUfoqeWT0ggrNgUrkFBU9gEQxaQTNHH2mQkV+xsO/zXL69anj5TCbkmQJtyu+QPeci1JkRnpG+NGGw7WOTqCyJvJ7KCNp1g2RZE8APps0Vh29G1RWEhtC2KX+TGoMV+VbJp/Cxf0DEFDIzMMGXuS4qZNxMbR7JCTXCPTeh62UT01PJhG8+hRJ9t/GFJEfMg+A3k+pH0a6KLoECaMjIUZKltCjURnRG/RsZkkGJvOgQYqw+CAqmns+lYZqw+6AzEDug4BEuVvZIxLnlAB3ZkyvEk6UxJxvReTnVewAExfxDxRxCRpyRjYmxrZRCXpf+fXZfLzeC/y6K3X1pquQ5dCPsw1u9mMplM5r+kKH4D1rhpgsIBV3wAAAAASUVORK5CYII=">
-                 <div>Savings</div>
+               <li class="dropdown">
+                  <a href="frontPage.html">
+                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIeSURBVGhD7Zm9Sl1BFIVvYSVWFhYWKUQIeQEhP5W1JH1IF0htGcgDpDTYBWyt1QewSpVnCCkkWqRIFUiKgMn69CwYNnMg4MxcHGbBh3MXe/bMuhzvOcNZDA0NDeX0SLwSbyrDGqxVRR/EtbgUXyvDGqzFmkX1QvwSj28+tdETwZp7N58K6VCc3A6b6lSwdjEdT1jvxcdK0NuK695ZseGFOBe5jdwFetLbahLk5e2wqOg5gvyPug7Sxf9IN79arTSCzCltuD39XZ9AtbxqQVbFt+nvu4maXrUgrTWCzKnbIJ9EPAxtioPgwfOJ6FPLnOjT26oehLvvkeBY+lb8FQ8ENZ+Fj6w/BI8dwNg+NdQyh7n0wKdn80cUP2t5Mw6Sq5t7hkrnorm6YooNWWxfbIlnIg1yJvDhSjgIY/vUUOsg9MCnZ/MgbCDFQaLvINGn1kFSmgZhA/52zYrYCB6sTUSfWuZEn95W9SC5p18eL14HD3Ymok8tc6K/tDM7PpeEL60vwpv6KXxpMbZPDbW+tBjjL/XM7s04SK4OchtM56K5umKKDbsK8l1wJ2acBuES8l36j3AQxvapodZB6IFPz6ZB2Jjv0oZfpt3gAWcLiD61zIk+va0RZE6xYTeXFov5m/NmHCRXB7kNpnPRXF0xxYZdBenihnhvH1G6edHjV2+8Dmulp+K3KPrqDS3jZSjn+ip6KFq9nmatoaGhoVSLxT/XpNQM2j2joAAAAABJRU5ErkJggg==">
+                     <div>Budget</div>
                   </a>
-              </li>
-              <li class="dropdown">
-                <a href="goals.html">
-                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQkSURBVGhD7ZlXq9RAHEcjFkRFH6zYG9gboqifQcGCiE/28iXE7oO9oOKzilgQKygW7Ao+CKLYO2L9ABYsv5PJyGzcku7d6z1w2Ek2ycxspv7Xa+I/ZFxg3bM3sO7ZH1j31GVFmsnRconcJg/Kd4GkObdYcg3XNjhGyh3yo/wpn8pjcqe8H0j6uHwmf0kqxz0j5D+HQpyQP+RluUB2ky7lmhbXcC33UHEqOEwWTku5Tn6XVGSMdKGgA02ypCKcC1d0rDwtv8rVsoUsBApyU36SUzgR0ElON0lvjlxhkiUV4RzfAddyj2Wq/CyvyK6cyJN+kvZ/L0gDbweGyA0mWYJbEReuHWySXuvgc4CkPz2WfTmRB13kE3letudEwANZrcPuDqzEKPnIJH06yHOSvDpzIkv41a/Lu5KMGDp7S+C4Gvza9hevhH0Gz+TZbeQteVVm2mfWSoZWXj30kTSxrOGZPBt6yA9ylX+UATSbb9Lt2EUxSzKa2b6UipOSIRZoYnREt49kDc+mw5MXzYwR8qhMBR2Ryc6dJ5jF88bNY5Jk0kw1YbKEYFwH5o8ilxPkZecTOv0Wk4wPr5XONs8/8rzJcr1JFgJ5kSew0HwrEy00aU680u7+UXQYeeabZFlYYzFHxKGnZKGZqFnzK9gMaVZzTbImFJR+xWeYat+Vg9Zg12bPZdT7SmDvwFIc+suVJhmJcgWOWwkgT/IGRs5NJhmPQ3KXSSbCLXiSSoRhmUOZajJB7nF8Je+EziFvqtaSw2IrEKcSPHu7DOdLWSiTe44y/0VDqgh5hPONXJEwDbFpse+PzVbpdnZ2b1EpV/AklVkjU3d2hl8CBcAMa3d2tahW4LiVIU87u7+UcX6EPySdEN/Iahny3WuTjAz7FCbEREsklgPvpS0Uy4WNJlkI5JXJEgUYBlmwAYGCoheNNjjB7nSzSSaDh9GmCdlYhgefeeJuG8ZLmvhQ/ygFBM+IOwGbHYINeW+syKOVf+R5Z+Vhk0wHGxq2utP8o2KZKb/IQf5RBjCHEHyw0cO8gg+stm3woZckCLjcP8oIQjJ0evbS4XBQx+CzEiw5bBCvEpXCQZdkc5kpBMv4xS7ItpwIeCirjWZE4bES3MszLO3kRZlLgM5CGJMoCr8WcSewnZLRrNxWuFLIlGvtCGifwRu5LYk85hYytbBkICBBn5kt7STFmD/DJP2trg2suRWhr9kYANe6QWw6NkFs3kZubyIMfYaCEjwj7hReTrM9tYs9tyKcs1tXC//4npE8a5nMvE9EgQg8wTMmrGtykSRQ4OJWxMI1S+UNyb1HZGZDbBqYa1hC8HcaizsCBaek+9cbexvOvZBcw9qJe1LP2HlAfyE6uVASUDsg7Z+hpDnHd0UsczKnXNOqSxpNRfYF1j0TZaRoRxONB8/7Df9r+UXEeraeAAAAAElFTkSuQmCC">
-                  <div>Goals</div>
-                </a>
-              </li>
-              <li class="dropdown">
+               </li>
+               <li class="dropdown">
+                  <a href="savings.html">
+                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALHSURBVGhD7Zi5jtUwFIaDoIKGVQIatgbBK9ABBWIHwTwDYmkQEkj0FGwvwPIGbAWLhGh4A5AYDTVUQ8cMAlHA/zk53Mgkk+s4o1jgT/pE7NzL9cnxiT0uMplMJpPJ/OOskw/lF/krMRkTY2OMnbyS7+QZeSAxz0rG9lIuyXZJ5LtdK032SMa4zbVa2Cf5EKyWb6t/z1em0AeMkbG2Ug8ESCfsrISx+6B3ICnQOxA/nUOysXJaoqeWzwo5I8/JNXQEcFw+k98kv4GL8ok8KkMICqQpI9fkgvwkO1+BFTz51/K7vCePSQr4giQ4+rjHa78tS9EZ8WvkjbwpD8qfdHSwSX6Us3IHHS1wj8/MSb7TxKDFzlO5If3PtUEmPsgrrlWyVZ6q5NrgMwTz3LX+ZtBiDwmEKcSUsUyslHclmaQ2kOvbknvAq5bvHHGtCdFTyyckkKeS+W/ckfPypGTgyDX7p1vSeCAfl5etBAUSmxHeTmQFmEI8fQbuc1pyb4trFcUJSbbqRGekb41QsNy/5FplPTA4m0J1VknuWZB8h+9ucK0JoxS7BXLRtUYOZIipxToB00ytza5VTq2v5eUfoqeWT0ggrNgUrkFBU9gEQxaQTNHH2mQkV+xsO/zXL69anj5TCbkmQJtyu+QPeci1JkRnpG+NGGw7WOTqCyJvJ7KCNp1g2RZE8APps0Vh29G1RWEhtC2KX+TGoMV+VbJp/Cxf0DEFDIzMMGXuS4qZNxMbR7JCTXCPTeh62UT01PJhG8+hRJ9t/GFJEfMg+A3k+pH0a6KLoECaMjIUZKltCjURnRG/RsZkkGJvOgQYqw+CAqmns+lYZqw+6AzEDug4BEuVvZIxLnlAB3ZkyvEk6UxJxvReTnVewAExfxDxRxCRpyRjYmxrZRCXpf+fXZfLzeC/y6K3X1pquQ5dCPsw1u9mMplM5r+kKH4D1rhpgsIBV3wAAAAASUVORK5CYII=">
+                     <div>Savings</div>
+                  </a>
+               </li>
+               <li class="dropdown">
+                  <a href="goals.html">
+                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQkSURBVGhD7ZlXq9RAHEcjFkRFH6zYG9gboqifQcGCiE/28iXE7oO9oOKzilgQKygW7Ao+CKLYO2L9ABYsv5PJyGzcku7d6z1w2Ek2ycxspv7Xa+I/ZFxg3bM3sO7ZH1j31GVFmsnRconcJg/Kd4GkObdYcg3XNjhGyh3yo/wpn8pjcqe8H0j6uHwmf0kqxz0j5D+HQpyQP+RluUB2ky7lmhbXcC33UHEqOEwWTku5Tn6XVGSMdKGgA02ypCKcC1d0rDwtv8rVsoUsBApyU36SUzgR0ElON0lvjlxhkiUV4RzfAddyj2Wq/CyvyK6cyJN+kvZ/L0gDbweGyA0mWYJbEReuHWySXuvgc4CkPz2WfTmRB13kE3letudEwANZrcPuDqzEKPnIJH06yHOSvDpzIkv41a/Lu5KMGDp7S+C4Gvza9hevhH0Gz+TZbeQteVVm2mfWSoZWXj30kTSxrOGZPBt6yA9ylX+UATSbb9Lt2EUxSzKa2b6UipOSIRZoYnREt49kDc+mw5MXzYwR8qhMBR2Ryc6dJ5jF88bNY5Jk0kw1YbKEYFwH5o8ilxPkZecTOv0Wk4wPr5XONs8/8rzJcr1JFgJ5kSew0HwrEy00aU680u7+UXQYeeabZFlYYzFHxKGnZKGZqFnzK9gMaVZzTbImFJR+xWeYat+Vg9Zg12bPZdT7SmDvwFIc+suVJhmJcgWOWwkgT/IGRs5NJhmPQ3KXSSbCLXiSSoRhmUOZajJB7nF8Je+EziFvqtaSw2IrEKcSPHu7DOdLWSiTe44y/0VDqgh5hPONXJEwDbFpse+PzVbpdnZ2b1EpV/AklVkjU3d2hl8CBcAMa3d2tahW4LiVIU87u7+UcX6EPySdEN/Iahny3WuTjAz7FCbEREsklgPvpS0Uy4WNJlkI5JXJEgUYBlmwAYGCoheNNjjB7nSzSSaDh9GmCdlYhgefeeJuG8ZLmvhQ/ygFBM+IOwGbHYINeW+syKOVf+R5Z+Vhk0wHGxq2utP8o2KZKb/IQf5RBjCHEHyw0cO8gg+stm3woZckCLjcP8oIQjJ0evbS4XBQx+CzEiw5bBCvEpXCQZdkc5kpBMv4xS7ItpwIeCirjWZE4bES3MszLO3kRZlLgM5CGJMoCr8WcSewnZLRrNxWuFLIlGvtCGifwRu5LYk85hYytbBkICBBn5kt7STFmD/DJP2trg2suRWhr9kYANe6QWw6NkFs3kZubyIMfYaCEjwj7hReTrM9tYs9tyKcs1tXC//4npE8a5nMvE9EgQg8wTMmrGtykSRQ4OJWxMI1S+UNyb1HZGZDbBqYa1hC8HcaizsCBaek+9cbexvOvZBcw9qJe1LP2HlAfyE6uVASUDsg7Z+hpDnHd0UsczKnXNOqSxpNRfYF1j0TZaRoRxONB8/7Df9r+UXEeraeAAAAAElFTkSuQmCC">
+                     <div>Goals</div>
+                  </a>
+               </li>
+               <li class="dropdown">
                   <a href="debt.html">
-				  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMvSURBVGhD7VlfiA1RGF+FFzwoyQOS2Dsz125qy4u0hciDkgcPpPDmRVKi1H4zd9t2N+VPkmRLkmhFWzZzzt3sVWsVbdry4oWs2hcieRCF6/edPauzFs3snT3XvZ1f/Zpzvvnzfb853zdn5kyDg4ODg0NSNJ+WC/LtYkVAcj242ad4jx+Kw+Apn8QZP5Rnc1Fxuz589hFQ7/yA+pf5hTjvR/EmBLELPIRAjvskuxDYFfTvgg/Rfg6Ow/4F+8sGv8P2FnyB9jB4zyPZ54Xya47kAe1qZlCBhfF+j8RRBFFAABfBm3BWhO0ZHL1G+5MRzARJfMRxL7H/KQKJYbsBXsCxIXgkCMU+P5I7AhIbwDVNnf2LtctpgJ82XOOJ7qaHckbiB4J5A44igEEvFLdx0UvYdsB2jO9ULpI7GyO5MV8o+s0kl7ZSaa6+RCbIkdgLf2O6mx4QIXA3enS3aqhYCE4egpjP2D7AKAxUi1xTGP0Pa2lgtQ4tHbQQgW0H0qqrWoT/btQXil+843rS4SWHEhLKTt2tLsrlObipj/hhoy3JYQrB0G5jciHzCKmtRZuOhxBPidupgBP/LyEkTsI+xO1U4JMmhbRcHpnHVDsswvSbiRC025lqh0WYft2ImELMXLWJzGukboTUT2q5Yp8BMIsjndb5FG/lV31FtCGkp2IhtmqEBYCj8Dv1+2aSJL95BdmiD08G20L44wrvUuPwcytH8SptngLENMav9bqbDLZTi2uAvyrZD14QC/B/Pdfdt0jvVqhYCNqzXuwQcRX+7jRSaYlKI9CjeLferVCxEBsjgk/rgxiJV7yQAb8ReC37EbFQIwGVFnJqIcV6//Y1WBNCGLyAgSfTCPxOf2IxK31q2UitX8A8wiPiR8Ut2c8jFor9TzD91t7MbsD0m4kQWzXyO0y/TogppH5SyxV7Zch+RHSutiZch8raNhHDDIVgFh3ktVdu/8uJDZuKgVcaERO3UwEnnuf1Vp5ptal6UGu/8jFG5Zy2JEdAAyu9UL5Heg3jAm0QdqIqhG8lArE00f3lOrx04B+VfBfwVirNfxY2qXwjBo5Fh+Xg4OBQ82ho+AkWeXTwDd5E0gAAAABJRU5ErkJggg==">
-                    <div>Debt</div>
+                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMvSURBVGhD7VlfiA1RGF+FFzwoyQOS2Dsz125qy4u0hciDkgcPpPDmRVKi1H4zd9t2N+VPkmRLkmhFWzZzzt3sVWsVbdry4oWs2hcieRCF6/edPauzFs3snT3XvZ1f/Zpzvvnzfb853zdn5kyDg4ODg0NSNJ+WC/LtYkVAcj242ad4jx+Kw+Apn8QZP5Rnc1Fxuz589hFQ7/yA+pf5hTjvR/EmBLELPIRAjvskuxDYFfTvgg/Rfg6Ow/4F+8sGv8P2FnyB9jB4zyPZ54Xya47kAe1qZlCBhfF+j8RRBFFAABfBm3BWhO0ZHL1G+5MRzARJfMRxL7H/KQKJYbsBXsCxIXgkCMU+P5I7AhIbwDVNnf2LtctpgJ82XOOJ7qaHckbiB4J5A44igEEvFLdx0UvYdsB2jO9ULpI7GyO5MV8o+s0kl7ZSaa6+RCbIkdgLf2O6mx4QIXA3enS3aqhYCE4egpjP2D7AKAxUi1xTGP0Pa2lgtQ4tHbQQgW0H0qqrWoT/btQXil+843rS4SWHEhLKTt2tLsrlObipj/hhoy3JYQrB0G5jciHzCKmtRZuOhxBPidupgBP/LyEkTsI+xO1U4JMmhbRcHpnHVDsswvSbiRC025lqh0WYft2ImELMXLWJzGukboTUT2q5Yp8BMIsjndb5FG/lV31FtCGkp2IhtmqEBYCj8Dv1+2aSJL95BdmiD08G20L44wrvUuPwcytH8SptngLENMav9bqbDLZTi2uAvyrZD14QC/B/Pdfdt0jvVqhYCNqzXuwQcRX+7jRSaYlKI9CjeLferVCxEBsjgk/rgxiJV7yQAb8ReC37EbFQIwGVFnJqIcV6//Y1WBNCGLyAgSfTCPxOf2IxK31q2UitX8A8wiPiR8Ut2c8jFor9TzD91t7MbsD0m4kQWzXyO0y/TogppH5SyxV7Zch+RHSutiZch8raNhHDDIVgFh3ktVdu/8uJDZuKgVcaERO3UwEnnuf1Vp5ptal6UGu/8jFG5Zy2JEdAAyu9UL5Heg3jAm0QdqIqhG8lArE00f3lOrx04B+VfBfwVirNfxY2qXwjBo5Fh+Xg4OBQ82ho+AkWeXTwDd5E0gAAAABJRU5ErkJggg==">
+                     <div>Debt</div>
                   </a>
-              </li>
+               </li>
             </ul>
             <!-- /.navbar-top-links -->
-            </nav>
-			
-			
-         <div id="page-wrapper" style= "margin-left: 0px"> 
-		 
-		 <h1 style="text-align: center">Debt Repayment</h1>
-		    <div class="col-lg-1">
-				<br><br>
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIeSURBVGhD7Zm9Sl1BFIVvYSVWFhYWKUQIeQEhP5W1JH1IF0htGcgDpDTYBWyt1QewSpVnCCkkWqRIFUiKgMn69CwYNnMg4MxcHGbBh3MXe/bMuhzvOcNZDA0NDeX0SLwSbyrDGqxVRR/EtbgUXyvDGqzFmkX1QvwSj28+tdETwZp7N58K6VCc3A6b6lSwdjEdT1jvxcdK0NuK695ZseGFOBe5jdwFetLbahLk5e2wqOg5gvyPug7Sxf9IN79arTSCzCltuD39XZ9AtbxqQVbFt+nvu4maXrUgrTWCzKnbIJ9EPAxtioPgwfOJ6FPLnOjT26oehLvvkeBY+lb8FQ8ENZ+Fj6w/BI8dwNg+NdQyh7n0wKdn80cUP2t5Mw6Sq5t7hkrnorm6YooNWWxfbIlnIg1yJvDhSjgIY/vUUOsg9MCnZ/MgbCDFQaLvINGn1kFSmgZhA/52zYrYCB6sTUSfWuZEn95W9SC5p18eL14HD3Ymok8tc6K/tDM7PpeEL60vwpv6KXxpMbZPDbW+tBjjL/XM7s04SK4OchtM56K5umKKDbsK8l1wJ2acBuES8l36j3AQxvapodZB6IFPz6ZB2Jjv0oZfpt3gAWcLiD61zIk+va0RZE6xYTeXFov5m/NmHCRXB7kNpnPRXF0xxYZdBenihnhvH1G6edHjV2+8Dmulp+K3KPrqDS3jZSjn+ip6KFq9nmatoaGhoVSLxT/XpNQM2j2joAAAAABJRU5ErkJggg==">
-				<br><br><br><br>
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIeSURBVGhD7Zm9Sl1BFIVvYSVWFhYWKUQIeQEhP5W1JH1IF0htGcgDpDTYBWyt1QewSpVnCCkkWqRIFUiKgMn69CwYNnMg4MxcHGbBh3MXe/bMuhzvOcNZDA0NDeX0SLwSbyrDGqxVRR/EtbgUXyvDGqzFmkX1QvwSj28+tdETwZp7N58K6VCc3A6b6lSwdjEdT1jvxcdK0NuK695ZseGFOBe5jdwFetLbahLk5e2wqOg5gvyPug7Sxf9IN79arTSCzCltuD39XZ9AtbxqQVbFt+nvu4maXrUgrTWCzKnbIJ9EPAxtioPgwfOJ6FPLnOjT26oehLvvkeBY+lb8FQ8ENZ+Fj6w/BI8dwNg+NdQyh7n0wKdn80cUP2t5Mw6Sq5t7hkrnorm6YooNWWxfbIlnIg1yJvDhSjgIY/vUUOsg9MCnZ/MgbCDFQaLvINGn1kFSmgZhA/52zYrYCB6sTUSfWuZEn95W9SC5p18eL14HD3Ymok8tc6K/tDM7PpeEL60vwpv6KXxpMbZPDbW+tBjjL/XM7s04SK4OchtM56K5umKKDbsK8l1wJ2acBuES8l36j3AQxvapodZB6IFPz6ZB2Jjv0oZfpt3gAWcLiD61zIk+va0RZE6xYTeXFov5m/NmHCRXB7kNpnPRXF0xxYZdBenihnhvH1G6edHjV2+8Dmulp+K3KPrqDS3jZSjn+ip6KFq9nmatoaGhoVSLxT/XpNQM2j2joAAAAABJRU5ErkJggg==">
-			</div>
-			
-			<div class="col-lg-3">	
-				<h2>OSAP</h2>
-				<label>Occurence</label>
-				<br>
-				<label>Interest rate</label>
-				<br>
-				<h2>Visa</h2>
-				<label>Occurence</label>
-				<br>
-				<label>Interest rate</label>
-			</div>
-			
-			<div class="col-lg-4">
-			<br><br><br>
-				<select>
-				<option value="monthly">Monthly</option>
-				<option value="weekly">Weekly</option>
-				<option value="biweekly">Biweekly</option>
-				</select>
-				<br>
-			    <input id="interest" type="range" min="0" max="12" step="0.1"></input>
-				<label><span id="amt"></span>%</label>
-				
-				<br><br><br>
-				<select>
-				<option value="monthly">Monthly</option>
-				<option value="weekly">Weekly</option>
-				<option value="biweekly">Biweekly</option>
-				</select>
-				<br>
-			    <input id="interest" type="range" min="0" max="12" step="0.1"></input>
-				<label><span id="amt"></span>6%</label>
-			</div>
-			
-			<div class="col-lg-3">
-              <h2>Total owed: $7212</h2>
-				<br><br><br>
-              <h2>Total owed: $899</h2>
-			</div>
-
+         </nav>
+         <div id="page-wrapper" style= "margin-left: 0px">
+            <h1 style="text-align: center">Debt Repayment</h1>
+            <div class="col-lg-1">
+               <br><br>
+               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIeSURBVGhD7Zm9Sl1BFIVvYSVWFhYWKUQIeQEhP5W1JH1IF0htGcgDpDTYBWyt1QewSpVnCCkkWqRIFUiKgMn69CwYNnMg4MxcHGbBh3MXe/bMuhzvOcNZDA0NDeX0SLwSbyrDGqxVRR/EtbgUXyvDGqzFmkX1QvwSj28+tdETwZp7N58K6VCc3A6b6lSwdjEdT1jvxcdK0NuK695ZseGFOBe5jdwFetLbahLk5e2wqOg5gvyPug7Sxf9IN79arTSCzCltuD39XZ9AtbxqQVbFt+nvu4maXrUgrTWCzKnbIJ9EPAxtioPgwfOJ6FPLnOjT26oehLvvkeBY+lb8FQ8ENZ+Fj6w/BI8dwNg+NdQyh7n0wKdn80cUP2t5Mw6Sq5t7hkrnorm6YooNWWxfbIlnIg1yJvDhSjgIY/vUUOsg9MCnZ/MgbCDFQaLvINGn1kFSmgZhA/52zYrYCB6sTUSfWuZEn95W9SC5p18eL14HD3Ymok8tc6K/tDM7PpeEL60vwpv6KXxpMbZPDbW+tBjjL/XM7s04SK4OchtM56K5umKKDbsK8l1wJ2acBuES8l36j3AQxvapodZB6IFPz6ZB2Jjv0oZfpt3gAWcLiD61zIk+va0RZE6xYTeXFov5m/NmHCRXB7kNpnPRXF0xxYZdBenihnhvH1G6edHjV2+8Dmulp+K3KPrqDS3jZSjn+ip6KFq9nmatoaGhoVSLxT/XpNQM2j2joAAAAABJRU5ErkJggg==">
+               <br><br><br><br>
+               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIeSURBVGhD7Zm9Sl1BFIVvYSVWFhYWKUQIeQEhP5W1JH1IF0htGcgDpDTYBWyt1QewSpVnCCkkWqRIFUiKgMn69CwYNnMg4MxcHGbBh3MXe/bMuhzvOcNZDA0NDeX0SLwSbyrDGqxVRR/EtbgUXyvDGqzFmkX1QvwSj28+tdETwZp7N58K6VCc3A6b6lSwdjEdT1jvxcdK0NuK695ZseGFOBe5jdwFetLbahLk5e2wqOg5gvyPug7Sxf9IN79arTSCzCltuD39XZ9AtbxqQVbFt+nvu4maXrUgrTWCzKnbIJ9EPAxtioPgwfOJ6FPLnOjT26oehLvvkeBY+lb8FQ8ENZ+Fj6w/BI8dwNg+NdQyh7n0wKdn80cUP2t5Mw6Sq5t7hkrnorm6YooNWWxfbIlnIg1yJvDhSjgIY/vUUOsg9MCnZ/MgbCDFQaLvINGn1kFSmgZhA/52zYrYCB6sTUSfWuZEn95W9SC5p18eL14HD3Ymok8tc6K/tDM7PpeEL60vwpv6KXxpMbZPDbW+tBjjL/XM7s04SK4OchtM56K5umKKDbsK8l1wJ2acBuES8l36j3AQxvapodZB6IFPz6ZB2Jjv0oZfpt3gAWcLiD61zIk+va0RZE6xYTeXFov5m/NmHCRXB7kNpnPRXF0xxYZdBenihnhvH1G6edHjV2+8Dmulp+K3KPrqDS3jZSjn+ip6KFq9nmatoaGhoVSLxT/XpNQM2j2joAAAAABJRU5ErkJggg==">
+            </div>
+            <div class="col-lg-3">
+               <h2>OSAP</h2>
+               <label>Occurence</label>
+               <br>
+               <label>Interest rate</label>
+               <br>
+               <h2>Visa</h2>
+               <label>Occurence</label>
+               <br>
+               <label>Interest rate</label>
+            </div>
+            <div class="col-lg-4">
+               <div class="col-lg-6" style="float: right">
+                  <br>
+                  <h2>$170</h2>
+               </div>
+               <br><br><br>
+               <select>
+                  <option value="monthly">Monthly</option>
+                  <option value="weekly">Weekly</option>
+                  <option value="biweekly">Biweekly</option>
+               </select>
+               <br>
+               <input id="interest" type="range" min="0" max="12" step="0.1" style="width: 70%"></input>
+               <label><span id="amt"></span>%</label>
+               <div id="tooltip" class="col-lg-6" style="float: right">
+                  <br>
+                  <h2>$330 
+                     <a class="epbtn" href="#infoModal" data-toggle="modal">
+                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMOSURBVEhL1ZVJaFNRFIbjPKxEUBdWito27706YRQXiuIMLnTjAA5UFFw4LNxod+e9xupCihQFKQrqNiBIrcl9aaGlYl2YjcPSjQsRRbTOUrHx/18OIdLE5IU24AeX5Jx37j33nuHeSLU0e8m1jRf6FqpYO2zXv2+Lf07F2gGnPZaYVhVrB05813L9syqOD474ey3XnFexKCulf05DZ3KGimOISfdsRORmkxhLVeWxJLXaFjOMcVFVAZukf6rtpbcizC4XxamvcoPY6Co1CaBT2zU+xnNHzFxVVwarls4tz2ynHBX/KJy8gtPPzC++XQucixmA/hecPG7y/PW0ha4N41lDe3Ie5dBwt/XSPxOL3LbE/wBHpynr5zwrxJ+P01/Bhn7C7iRPzKGfqwMFdB2LvcQmGlRVElvSu2D/LSrmoKqqI1hIzFdHko6qygLHLUzHsva+BaoKD/L2BPmLq1gxiNAgNnBZxXA0xf3FyO1oc9wsUlXFOK45xEJUMRyOl97H3KoYCt7hKLZs2XAzh9jhW1Yu8vPOkd4NrGBMfqQm4UgkptAx+5utxXV17Yxa5Ih1ZaZFPbPZltQ2XhB1HUOzbDd1hL2oJqHgrUbHdrynfrkk64J1MXgxqUlpsLuNmPyJm1JVxUQlvQYRG6lmLsKfmM7wRL30TlVVDDsB0TIqhgcLdGKBARUrIggz6gSh3a+q8PCu1cI4oaqyID134Hgoks1OUlV12F5qDy6SH7bnr1NVSXBpnEKEhpvjyaWqCo8+bTf4nqJQWnNtVvq+diS9G06/o4W2YN4BpOmf73lRir2n+N+FkL9g0QVGBTRK7xI+DtjcYcpWmx/jyTH+es/Lgglj3tNcb5vXGB3MeeGAbTd+76lpQNBSrvnIe0FV5Sn1nmKhBzjZG5wsUzig/8J0qFmeIFoik1WsHjjpQdVeUjEPHD8s5njcCBzjrUVYd2ADv4NrUcfEOnbNLTgdZGshr8eYXzyBZ/D/PWU1G3/YWjjdUzgZLTjpCCPB4lOziYPXIvsUjo/zCVT1/0Ak8gfWFKAJ8OL6GgAAAABJRU5ErkJggg==">
+                  </h2>
+                  </a>
+               </div>
+               <br><br><br>
+               <select>
+                  <option value="monthly">Monthly</option>
+                  <option value="weekly">Weekly</option>
+                  <option value="biweekly">Biweekly</option>
+               </select>
+               <br>
+               <input id="interest" type="range" min="0" max="12" step="0.1" style="width: 70%"></input>
+               <label><span id="amt"></span>6%</label>
+               <br><br>
+               <a class="epbtn" href="#addDebtModal" data-toggle="modal">
+                  <div class="sqcontent" style="display: block; margin-left: auto; margin-right: auto; width: 70%">
+                     <img src="data:image/png;base64,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">                  
+                  </div>
+               </a>
+            </div>
+            <div class="col-lg-3">
+               <br>
+               <h2>Total owed: $7212</h2>
+               <br><br><br>
+               <h2>Total owed: $899</h2>
+            </div>
          </div>
-		 
-		 <h2 class="navbar-fixed-bottom" style="text-align: center">Total Debt: $8111</h2>
+         <h2 class="navbar-fixed-bottom" style="text-align: center; color: red">Total Debt: $8111</h2>
          <!-- /#page-wrapper -->
       </div>
       <!-- /#wrapper -->
-	  </div>
+      </div>
+      <div id="addDebtModal" class="modal fade text-center">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"
+                     aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Add New Debt</h4>
+               </div>
+               <div class="modal-body">
+                  <div class="row form-group">
+                     <div class="col-md-6">
+                        <label> Name: </label>
+                     </div>
+                     <div class="col-md-6">
+                        <input> </input>
+                     </div>
+                  </div>
+                  <div class="row form-group">
+                     <div class="col-md-6">
+                        <label> Amount: </label>
+                     </div>
+                     <div class="col-md-6">
+                        <input> </input>
+                     </div>
+                  </div>
+                  <div class="row form-group">
+                     <div class="col-md-6">
+                        <label> Payment: </label>
+                     </div>
+                     <div class="col-md-6">
+                        <input> </input>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="infoModal" class="modal fade text-center">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"
+                     aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Debt Information</h4>
+               </div>
+               <div class="modal-body">
+                  <label>Increasing your monthly payment by $212 will help you get your debt paid off by January 2022 instead of July, and save you $234 in interest fees!</label>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Thanks!</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+	  
       <!-- jQuery -->
       <script src="../vendor/jquery/jquery.min.js"></script>
       <!-- Bootstrap Core JavaScript -->
@@ -134,16 +215,16 @@
       <script src="../data/morris-data.js"></script>
       <!-- Custom Theme JavaScript -->
       <script src="../dist/js/sb-admin-2.js"></script>
-	  <script>
-		var slider = document.getElementById("interest");
-		var output = document.getElementById("amt");
-		output.innerHTML = slider.value;
-
-		slider.oninput = function() {
-		output.innerHTML = this.value;
-			}
-
-		</script>
-
+	  
+      <script>
+         var slider = document.getElementById("interest");
+         var output = document.getElementById("amt");
+         output.innerHTML = slider.value;
+         
+         slider.oninput = function() {
+         output.innerHTML = this.value;
+         	}
+      </script>
+	  
    </body>
 </html>
