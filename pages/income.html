@@ -72,8 +72,8 @@
             </div>
             <div class="row" style="text-align:center">
               <form id="occurence1">
-                <label style="text-align:center; margin-left:70px"> Occurrence:</label>
-                <input style="margin-left:70px" type="radio" value="Weekly" > Weekly
+                <label style="text-align:center; margin-left:60px"> Occurrence:</label>
+                <input style="margin-left:65px" type="radio" value="Weekly" > Weekly
                 <input type="radio" value="Bi-Weekly" checked> Bi-Weekly
                 <input type="radio" value="Monthly"> Monthly
               </form>
@@ -85,13 +85,14 @@
             </div>
             <div class="row" style="text-align:center">
               <form id="occurence2">
-                <label style="text-align:center; margin-left:70px"> Occurrence:</label>
-                <input style="margin-left:70px" type="radio" value="Weekly" > Weekly
+                <label style="text-align:center; margin-left:60px"> Occurrence:</label>
+                <input style="margin-left:65px" type="radio" value="Weekly" > Weekly
                 <input type="radio" value="Bi-Weekly" checked> Bi-Weekly
                 <input type="radio" value="Monthly"> Monthly
               </form>
-              <input type="submit" value="Submit" onclick="myAlert()" style="margin-left:70px">
             </div>
+            <br>
+            <input type="submit" value="Submit" onclick="myAlert()" style="margin-left:415px">
             <script>
             function myAlert(){document.getElementById("total").innerHTML = "Total Monthly Income: " + (parseInt(document.getElementById("input1").value) + parseInt(document.getElementById("input2").value)) }
             </script>
